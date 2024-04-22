@@ -1,13 +1,13 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Header from "../header";
 import { Spotlight } from "../ui/Spotlight";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import Image from "next/image";
 import "@/app/globals.css";
-import Link from "next/link";
 import { HeroHighlight } from "../ui/hero-highlight";
 import { motion } from "framer-motion";
+import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
@@ -29,7 +29,7 @@ const Hero = () => {
           }}
         >
           <Spotlight fill="#DB2777" className="top-0" />
-          <div className="pt-16">
+          <div className="pt-24">
             <HoverBorderGradient
               containerClassName="rounded-full"
               as="button"
@@ -39,7 +39,7 @@ const Hero = () => {
             </HoverBorderGradient>
           </div>
           <div className="text-pink-600 dark:text-slate-200 mt-20 text-4xl md:text-8xl font-bold z-50 flex flex-col md:flex-row items-center justify-center md:gap-4 tracking-wider">
-            <span className="py-2 tracking-wider animated-h2 text-pink-600 dark:text-slate-200">
+            <span className="py-2 tracking-wider animated dark:animated-h2 text-pink-600 dark:text-slate-200">
               HULT
             </span>
             <Image
@@ -48,18 +48,29 @@ const Hero = () => {
               height={100}
               alt="hult_logo"
             />
-            <span className="py-2 tracking-wider animated-h2 text-pink-600 dark:text-slate-200">
+            <span className="py-2 tracking-wider animated dark:animated-h2 text-pink-600 dark:text-slate-200">
               PRIZE
             </span>
           </div>
 
-          <div className="w-[40rem] relative">
+          <div className="w-[40rem] relative pb-10">
             <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-[2px] w-3/4 blur-sm" />
             <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-3/4" />
             <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-[5px] w-1/4 blur-sm" />
             <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-1/4" />
           </div>
-          <div className="text-zinc-400 text-3xl mt-36 font-bold">
+
+          <div className="flex justify-center gap-16 pt-20">
+            <a href="#about">
+              <Button className="text-md bg-pink-600 text-white font-extrabold dark:hover:bg-slate-950 hover:border dark:hover:border-pink-600 hover:transition-all hover:bg-pink-900">
+                Know More
+              </Button>
+            </a>
+            <Button className="text-md bg-pink-600 text-white font-extrabold dark:hover:bg-slate-950 hover:border dark:hover:border-pink-600 hover:transition-all hover:bg-pink-900">
+              Explore
+            </Button>
+          </div>
+          <div className="text-zinc-700 dark:text-zinc-400 text-3xl mt-12 font-bold">
             Organized by
             <div className="flex justify-center gap-10 mt-12">
               <a href="https://www.iictmsl.com/" target="_blank">

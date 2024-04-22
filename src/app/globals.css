@@ -84,14 +84,24 @@
         text-shadow: 0 0 10px #DB2777, 0 0 20px #DB2777, 0 0 40px #DB2777, 0 0 80px #DB2777, 0 0 160px #DB2777;
       }
     }
+        @keyframes animate1 {
+          0% {
+            color: #DB2777;
+            text-shadow: none;
+          }
+    
+          100% {
+            color: #ef91b7;
+            text-shadow: 0 0 10px #DB2777, 0 0 20px #DB2777, 0 0 40px #DB2777, 0 0 80px #DB2777, 0 0 160px #DB2777;
+          }
+        }
   }
 
     @layer components {
       .animated-h2 {
         animation: animate 1s linear forwards;
       }
-      .b{
-        background: rgb(26, 23, 23);
-        background: linear-gradient(0deg, rgba(26, 23, 23, 1) 27%, rgba(107, 45, 61, 1) 79%);
+      .animated {
+        animation: none;
       }
     }
