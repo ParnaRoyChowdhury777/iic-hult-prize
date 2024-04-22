@@ -10,7 +10,7 @@ const About = () => {
         </h2>
         <p className="text-zinc-500 mt-20 text-xl px-10">
           Embark on a transformative journey of global impact with our year-long
-          competition, empowering young minds to tackle humanity's greatest
+          competition, empowering young minds to tackle humanity&apos;s greatest
           challenges head-on through ingenious social ventures. Explore the
           intricate stages of the competition below, each designed to hone
           skills, foster creativity, and drive real-world change.
@@ -134,11 +134,11 @@ const About = () => {
               Global Finals, where six visionary teams take center stage to
               pitch their transformative social ventures to a panel of esteemed
               judges. With the coveted US $1,000,000 Hult Prize on the line, the
-              stakes couldn't be higher.<br></br>
-              <br></br> Don't miss the electrifying action! Tune in to watch the
-              Hult Prize Global Finals 2023, broadcasting live from the iconic
-              L'Élysée Montmartre in the heart of Paris, France. Click the link
-              below to witness history in the making.
+              stakes couldn&apos;t be higher.<br></br>
+              <br></br> Don&apos;t miss the electrifying action! Tune in to
+              watch the Hult Prize Global Finals 2023, broadcasting live from
+              the iconic L&apos;Élysée Montmartre in the heart of Paris, France.
+              Click the link below to witness history in the making.
             </p>
           </div>
         </div>
