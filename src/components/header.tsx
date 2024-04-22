@@ -5,7 +5,7 @@ import { ModeToggle } from "@/components/ui/ModeToggle";
 
 const header = () => {
   return (
-    <header className="w-full z-[49] shadow shadow-neutral-700/50 fixed top-0 bg-slate-200/50 dark:bg-gray-950/50 flex text-[1.1rem] text-[#E6007F] dark:text-zinc-400 h-20 mb-12 font-semibold pb-10">
+    <header className="w-full z-[49] shadow-sm shadow-pink-600/50 fixed top-0 bg-slate-200/50 dark:bg-gray-950/50 flex text-[1.1rem] text-[#E6007F] dark:text-zinc-400 h-20 mb-12 font-semibold pb-10">
       <Link href="https://www.hultprize.org/" target="_blank">
         <Image
           src="/images/logo.png"
