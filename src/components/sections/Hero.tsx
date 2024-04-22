@@ -53,15 +53,15 @@ const Hero = () => {
             <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-[5px] w-1/4 blur-sm" />
             <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-1/4" />
           </div>
-          <div className="text-zinc-400 text-3xl uppercase mt-36 font-bold">
+          <div className="text-zinc-400 text-3xl mt-36 font-bold">
             Organized by
             <div className="flex justify-center gap-10 mt-12">
               <a href="https://www.iictmsl.com/" target="_blank">
                 <Image
                   src="/images/iic_logo.jpg"
                   alt="iic_logo"
-                  width={100}
-                  height={100}
+                  width={50}
+                  height={50}
                   style={{ cursor: "pointer !important" }}
                 />
               </a>

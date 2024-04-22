@@ -88,7 +88,6 @@
 
     @layer components {
       .animated-h2 {
-        -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
         animation: animate 1s linear forwards;
       }
     }
