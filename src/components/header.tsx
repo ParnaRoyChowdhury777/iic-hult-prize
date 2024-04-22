@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ModeToggle } from "@/components/ui/ModeToggle";
 
 const header = () => {
   return (
@@ -34,6 +35,7 @@ const header = () => {
           Contact
         </a>
       </div>
+      <ModeToggle />
     </header>
   );
 };

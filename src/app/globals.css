@@ -72,6 +72,23 @@
     }
     body {
       @apply bg-background text-foreground;
+    } 
+    @keyframes animate {
+      0% {
+        color: #DB2777;
+        text-shadow: none;
+      }
+
+      100% {
+        color: #fff;
+        text-shadow: 0 0 10px #DB2777, 0 0 20px #DB2777, 0 0 40px #DB2777, 0 0 80px #DB2777, 0 0 160px #DB2777;
+      }
     }
-    
   }
+
+    @layer components {
+      .animated-h2 {
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+        animation: animate 1s linear forwards;
+      }
+    }

@@ -3,6 +3,8 @@ import Header from "../header";
 import { Spotlight } from "../ui/Spotlight";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import Image from "next/image";
+import "@/app/globals.css";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -18,32 +20,34 @@ const Hero = () => {
       >
         InnovateUps 📈
       </HoverBorderGradient>
-      <h2 className="text-slate-200 mt-16 text-6xl font-bold z-50 flex gap-4 tracking-wider">
-        <span className="py-2">HULT</span>
+      <h2 className="text-slate-200 mt-20 text-8xl font-bold z-50 flex gap-4 tracking-wider">
+        <span className="py-2 tracking-wider animated-h2">HULT</span>
         <Image
           src="/images/hult_logo.png"
-          width={80}
+          width={100}
           height={100}
           alt="hult_logo"
         />
-        <span className="py-2">PRIZE</span>
+        <span className="py-2 tracking-wider animated-h2">PRIZE</span>
       </h2>
-      <div className="w-[40rem] relative mt-7">
+      <div className="w-[40rem] relative">
         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-[2px] w-3/4 blur-sm" />
         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-3/4" />
         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-[5px] w-1/4 blur-sm" />
         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-1/4" />
       </div>
-      <h1 className="text-pink-600 text-3xl uppercase mt-7">
+      <h1 className="text-slate-200 text-3xl uppercase mt-36 font-bold">
         Organized by
-        <div className="flex gap-10 mt-12">
-          <Image
-            src="/images/iic_logo.jpg"
-            alt="iic_logo"
-            width={100}
-            height={100}
-            className="cursor-pointer"
-          />
+        <div className="flex justify-center gap-10 mt-12">
+          <a href="https://www.iictmsl.com/">
+            <Image
+              src="/images/iic_logo.jpg"
+              alt="iic_logo"
+              width={100}
+              height={100}
+              style={{ cursor: "pointer !important" }}
+            />
+          </a>
           <Image
             src="/images/techno_logo.png"
             alt="techno_logo"
