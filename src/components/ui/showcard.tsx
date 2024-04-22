@@ -5,9 +5,10 @@ import Card from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
 import Typography from "@mui/joy/Typography";
 import Image from "next/image";
-import img1 from "../../images/2024theme.jpg";
+import Link from "next/link";
+import Box from "@mui/joy/Box";
 
-export default function showcard() {
+export default function showcard({ team, tagline, domain, imageSrc, idea }: { team: string, tagline: string, domain: string, imageSrc: string, idea: string }) {
   return (
     <div className="">
       {/* <Card
@@ -38,32 +39,48 @@ export default function showcard() {
         }}
       > */}
         <div>
-          <Typography level="title-lg">pHighters</Typography>
+          <Typography level="title-lg">{team}</Typography>
           <Typography level="body-sm" className="dark:text-black">
-            where innovation meets environmental sustainability.
+            {tagline}
           </Typography>
         </div>
         <AspectRatio minHeight="120px" maxHeight="200px">
-          <Image src={img1} loading="lazy" width={100} height={100} alt="" />
+          <Image
+            src={imageSrc}
+            loading="lazy"
+            width={100}
+            height={100}
+            alt=""
+          />
         </AspectRatio>
-        <CardContent orientation="horizontal">
+        <CardContent
+          orientation="horizontal"
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <div>
             <Typography level="body-xs" className="dark:text-black">
               Domain :
             </Typography>
-            <Typography fontSize="lg" fontWeight="lg">
-              Eco friendly
+            <Typography fontSize="sm" fontWeight="lg">
+              {domain}
             </Typography>
           </div>
-          <Button
-            className="bg-pink-600 hover:bg-pink-800"
-            variant="solid"
-            size="md"
-            aria-label="Explore"
-            sx={{ ml: "auto", alignSelf: "center", fontWeight: 600 }}
-          >
-            Explore
-          </Button>
+          <Link href={idea}>
+            <Button
+              className="bg-pink-600 hover:bg-pink-800"
+              variant="solid"
+              size="md"
+              color="primary"
+              aria-label="Explore"
+              sx={{ fontWeight: 600 }}
+            >
+              Explore
+            </Button>
+          </Link>
         </CardContent>
       </Card>
     </div>

@@ -2,7 +2,50 @@ import React from "react";
 import Image from "next/image";
 import img1 from "../../images/2024theme.jpg";
 import Showcard from "../ui/showcard";
+import phightersImage from "../../images/phighters.jpeg";
+import secretchefImage from "../../images/secret chef.jpg";
+import bookbridgeImage from "../../images/book bridge.png";
+import toureaseImage from "../../images/tour ease.jpg";
+import futurebearersImage from "../../images/future bearers.jpg";
 const Show2024 = () => {
+  const cardsData = [
+    {
+      team: "pHighters",
+      tagline: " where innovation meets environmental sustainability.",
+      domain: "Eco friendly",
+      imageSrc: phightersImage,
+      idea: "https://phighters.netlify.app/",
+    },
+    {
+      team: "The Secret Chef",
+      tagline:
+        "Savour The Secret, Embrace The Flavour Your Culinary Journey Begins Here",
+      domain: "Social,Women Empowerment ",
+      imageSrc: secretchefImage,
+      idea: "https://www.instagram.com/__.thesecretchef__?igsh=dW5qaDUxNWo4NXY1",
+    },
+    {
+      team: "Book Bridge",
+      tagline: "Affordability and Sustainability in Education ",
+      domain: "Social",
+      imageSrc: bookbridgeImage,
+      idea: "",
+    },
+    {
+      team: "TourEase",
+      tagline: "Complete Tour Guide on a single Tap",
+      domain: "Travel",
+      imageSrc: toureaseImage,
+      idea: "",
+    },
+    {
+      team: "The Future Bearers",
+      tagline: "Our bags, Your planet, One seaweed solution!",
+      domain: "Eco-friendly",
+      imageSrc: futurebearersImage,
+      idea: "",
+    },
+  ];
   return (
     <>
       <div className="flex flex-wrap justify-center items-center">
@@ -59,11 +102,16 @@ const Show2024 = () => {
         </div>
       </div>
       <div className="flex flex-wrap justify-center items-center">
-        <Showcard />
-        <Showcard />
-        <Showcard />
-        <Showcard />
-        <Showcard />
+        {cardsData.map((cardData, index) => (
+          <Showcard
+            key={index} // Use the index as a key, or better yet, a unique identifier
+            team={cardData.team}
+            tagline={cardData.tagline}
+            domain={cardData.domain}
+            imageSrc={cardData.imageSrc as unknown as string} // Convert imageSrc to string
+            idea={cardData.idea}
+          />
+        ))}
       </div>
     </>
   );
