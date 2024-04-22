@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative w-full bg-[#FFFFFF] dark:bg-black min-h-svh flex flex-col items-center text-center justify-center">
+    <section className="relative w-full min-h-svh flex flex-col items-center text-center justify-center">
       <Header />
       <HeroHighlight>
         <motion.h1
@@ -28,23 +28,29 @@ const Hero = () => {
             ease: [0.4, 0.0, 0.2, 1],
           }}
         >
-          <Spotlight fill="#DB2777" className="top-0 ml-12 pl-12" />
-          <HoverBorderGradient
-            containerClassName="rounded-full"
-            as="button"
-            className="bg-transparent text-white flex justify-center m-auto items-center space-x-2 border-none outline-none"
-          >
-            InnovateUps 📈
-          </HoverBorderGradient>
-          <div className="text-slate-200 mt-20 text-4xl md:text-8xl font-bold z-50 flex flex-col md:flex-row items-center justify-center md:gap-4 tracking-wider">
-            <span className="py-2 tracking-wider animated-h2">HULT</span>
+          <Spotlight fill="#DB2777" className="top-0" />
+          <div className="pt-16">
+            <HoverBorderGradient
+              containerClassName="rounded-full"
+              as="button"
+              className="bg-transparent text-pink-600 dark:text-white font-extrabold flex justify-center m-auto items-center space-x-2 border-none outline-none"
+            >
+              InnovateUps 📈
+            </HoverBorderGradient>
+          </div>
+          <div className="text-pink-600 dark:text-slate-200 mt-20 text-4xl md:text-8xl font-bold z-50 flex flex-col md:flex-row items-center justify-center md:gap-4 tracking-wider">
+            <span className="py-2 tracking-wider animated-h2 text-pink-600 dark:text-slate-200">
+              HULT
+            </span>
             <Image
               src="/images/hult_logo.png"
               width={100}
               height={100}
               alt="hult_logo"
             />
-            <span className="py-2 tracking-wider animated-h2">PRIZE</span>
+            <span className="py-2 tracking-wider animated-h2 text-pink-600 dark:text-slate-200">
+              PRIZE
+            </span>
           </div>
 
           <div className="w-[40rem] relative">
@@ -62,15 +68,15 @@ const Hero = () => {
                   alt="iic_logo"
                   width={50}
                   height={50}
-                  style={{ cursor: "pointer !important" }}
+                  className="rounded-lg cursor-pointer"
                 />
               </a>
               <a href="https://www.ticollege.ac.in/" target="_blank">
                 <Image
                   src="/images/techno_logo.png"
                   alt="techno_logo"
-                  width={100}
-                  height={100}
+                  width={60}
+                  height={60}
                   className="cursor-pointer"
                 />
               </a>

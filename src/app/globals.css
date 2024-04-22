@@ -90,4 +90,8 @@
       .animated-h2 {
         animation: animate 1s linear forwards;
       }
+      .b{
+        background: rgb(26, 23, 23);
+        background: linear-gradient(0deg, rgba(26, 23, 23, 1) 27%, rgba(107, 45, 61, 1) 79%);
+      }
     }
