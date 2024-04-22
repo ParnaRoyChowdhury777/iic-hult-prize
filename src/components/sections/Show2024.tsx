@@ -7,6 +7,7 @@ import secretchefImage from "../../images/secret chef.jpg";
 import bookbridgeImage from "../../images/book bridge.png";
 import toureaseImage from "../../images/tour ease.jpg";
 import futurebearersImage from "../../images/future bearers.jpg";
+
 const Show2024 = () => {
   const cardsData = [
     {
@@ -26,7 +27,7 @@ const Show2024 = () => {
     },
     {
       team: "Book Bridge",
-      tagline: "Affordability and Sustainability in Education ",
+      tagline: "Affordability and Sustainability in Education sector",
       domain: "Social",
       imageSrc: bookbridgeImage,
       idea: "",
