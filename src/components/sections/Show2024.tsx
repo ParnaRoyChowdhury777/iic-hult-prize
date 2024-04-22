@@ -5,11 +5,11 @@ import Showcard from "../ui/showcard";
 const Show2024 = () => {
   return (
     <>
-      <div className="flex justify-center items-center">
-        <div>
+      <div className="flex flex-wrap justify-center items-center">
+        <div className="shadow-xl">
           <a
             href="#"
-            className="flex flex-col items-center bg-white border border-gray-200 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+            className="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
           >
             <Image
               className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg m-5"
@@ -58,11 +58,12 @@ const Show2024 = () => {
           </a>
         </div>
       </div>
-      <div className="grid grid-cols-3">
-      <Showcard />
-      <Showcard />
-      <Showcard />
-      <Showcard />
+      <div className="flex flex-wrap justify-center items-center">
+        <Showcard />
+        <Showcard />
+        <Showcard />
+        <Showcard />
+        <Showcard />
       </div>
     </>
   );

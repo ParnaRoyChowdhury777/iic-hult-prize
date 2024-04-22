@@ -92,3 +92,19 @@
         animation: animate 1s linear forwards;
       }
     }
+
+        @keyframes colorChange {
+          0% {
+            background-color: #f3e8f3;
+            /* Initial color */
+          }
+    
+          100% {
+            background-color: #e8b8e8;
+            /* Final color */
+          }
+        }
+    
+        .hover\:animate-colorChange:hover {
+          animation: colorChange 0.5s ease-in-out;
+        }
