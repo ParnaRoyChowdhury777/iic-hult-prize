@@ -20,7 +20,7 @@ export default function showcard() {
         }}
       > */}
       <Card
-        className="bg-pink-50 m-10 border-2 hover:shadow-lg shadow-lg shadow-pink-400/50 transform transition duration-500 ease-in-out hover:scale-105 hover:animate-colorChange"
+        className="bg-pink-50 m-10 border-2 hover:shadow-lg shadow-lg shadow-pink-400/50 transform transition duration-500 ease-in-out hover:scale-105 hover:animate-colorChange cursor-pointer dark:bg-gray-400  "
         sx={{
           width: 320,
           transition: "0.3s",
@@ -28,7 +28,7 @@ export default function showcard() {
           "&:hover": { boxShadow: "0 8px 16px 0 rgba(0,0,0,0.6)" },
         }}
       >
-      {/* <Card
+        {/* <Card
         className="bg-pink-50 m-10 border-2 hover:shadow-lg shadow-lg shadow-pink-400/50 transform transition duration-500 ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500"
         sx={{
           width: 320,
@@ -39,7 +39,7 @@ export default function showcard() {
       > */}
         <div>
           <Typography level="title-lg">pHighters</Typography>
-          <Typography level="body-sm">
+          <Typography level="body-sm" className="dark:text-black">
             where innovation meets environmental sustainability.
           </Typography>
         </div>
@@ -48,7 +48,9 @@ export default function showcard() {
         </AspectRatio>
         <CardContent orientation="horizontal">
           <div>
-            <Typography level="body-xs">Domain :</Typography>
+            <Typography level="body-xs" className="dark:text-black">
+              Domain :
+            </Typography>
             <Typography fontSize="lg" fontWeight="lg">
               Eco friendly
             </Typography>
