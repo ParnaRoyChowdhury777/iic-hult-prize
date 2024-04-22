@@ -137,8 +137,8 @@ const About = () => {
               stakes couldn&apos;t be higher.<br></br>
               <br></br> Don&apos;t miss the electrifying action! Tune in to
               watch the Hult Prize Global Finals 2023, broadcasting live from
-              the iconic L&apos;Élysée Montmartre in the heart of Paris, France.
-              Click the link below to witness history in the making.
+              the iconic L&apos; Montmartre in the heart of Paris, France. Click
+              the link below to witness history in the making.
             </p>
           </div>
         </div>
