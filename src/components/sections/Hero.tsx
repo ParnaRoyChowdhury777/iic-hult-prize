@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative w-full bg-slate-100 dark:bg-gray-950 min-h-svh flex flex-col items-center text-center justify-center">
+    <section className="relative w-full bg-[#FFFFFF] dark:bg-black min-h-svh flex flex-col items-center text-center justify-center">
       <Header />
       <HeroHighlight>
         <motion.h1
