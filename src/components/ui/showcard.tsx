@@ -8,36 +8,36 @@ import Image from "next/image";
 import Link from "next/link";
 import { AnimatedTooltip } from "./animated-tooltip";
 import tooltip from "../../../public/images/tooltip.png";
+import { StaticImageData } from "next/image";
 
-
-export default function showcard({ team, tagline, domain, imageSrc, idea }: { team: string, tagline: string, domain: string, imageSrc: string, idea: string }) {
+export default function showcard({ team, tagline, domain, imageSrc, idea, people1,people2,people3,people4,people5 }: { team: string, tagline: string, domain: string, imageSrc: string, idea: string, people1: { id: number; name: string; designation: string; image: StaticImageData; }[],people2: { id: number; name: string; designation: string; image: StaticImageData; }[],people3: { id: number; name: string; designation: string; image: StaticImageData; }[] ,people4: { id: number; name: string; designation: string; image: StaticImageData; }[],people5: { id: number; name: string; designation: string; image: StaticImageData; }[]}) {
   
-  const people = [
-    {
-      id: 1,
-      name: "John Doe",
-      designation: "Software Engineer",
-      image:tooltip,
-    },
-    {
-      id: 2,
-      name: "Robert Johnson",
-      designation: "Product Manager",
-      image:tooltip,
-    },
-    {
-      id: 3,
-      name: "Jane Smith",
-      designation: "Data Scientist",
-      image:tooltip,
-    },
-    {
-      id: 4,
-      name: "Emily Davis",
-      designation: "UX Designer",
-      image:tooltip,
-    },
-  ];
+  // const people = [
+  //   {
+  //     id: 1,
+  //     name: "John Doe",
+  //     designation: "Software Engineer",
+  //     image:tooltip,
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Robert Johnson",
+  //     designation: "Product Manager",
+  //     image:tooltip,
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Jane Smith",
+  //     designation: "Data Scientist",
+  //     image:tooltip,
+  //   },
+  //   {
+  //     id: 4,
+  //     name: "Emily Davis",
+  //     designation: "UX Designer",
+  //     image:tooltip,
+  //   },
+  // ];
   return (
     <div className="">
       {/* <Card
@@ -103,9 +103,13 @@ export default function showcard({ team, tagline, domain, imageSrc, idea }: { te
           </Link>
         </CardContent>
       </Card>
-        <p className="text-center mb-2">Comprises of</p>
+      <p className="text-center mb-2">Presented by</p>
       <div className="flex flex-row items-center justify-center mb-10 w-full gap-5">
-        <AnimatedTooltip items={people} />
+        <AnimatedTooltip items={people1} />
+        <AnimatedTooltip items={people2} />
+        <AnimatedTooltip items={people3} />
+        <AnimatedTooltip items={people4} />
+        <AnimatedTooltip items={people5} />
       </div>
     </div>
   );

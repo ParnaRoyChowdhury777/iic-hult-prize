@@ -7,6 +7,7 @@ import secretchefImage from "../../../public/images/secret chef.jpg";
 import bookbridgeImage from "../../../public/images/book bridge.png";
 import toureaseImage from "../../../public/images/tour ease.jpg";
 import futurebearersImage from "../../../public/images/future bearers.jpg";
+import tooltip from "../../../public/images/tooltip.png";
 
 const Show2024 = () => {
   const cardsData = [
@@ -16,6 +17,36 @@ const Show2024 = () => {
       domain: "Eco friendly",
       imageSrc: phightersImage,
       idea: "https://phighters.netlify.app/",
+      people1: {
+        id: 1,
+        name: "Swikriti Mukherjee",
+        designation: "Student",
+        image: tooltip,
+      },
+      people2: {
+        id: 2,
+        name: "Prayas Pal",
+        designation: "Student",
+        image: tooltip,
+      },
+      people3: {
+        id: 3,
+        name: "Kaniska Mitra",
+        designation: "Student",
+        image: tooltip,
+      },
+      people4: {
+        id: 4,
+        name: "Sabittwa Banerjee",
+        designation: "Student",
+        image: tooltip,
+      },
+      people5: {
+        id: 5,
+        name: "NA",
+        designation: "NA",
+        image: tooltip,
+      },
     },
     {
       team: "The Secret Chef",
@@ -24,6 +55,36 @@ const Show2024 = () => {
       domain: "Social,Women Empowerment ",
       imageSrc: secretchefImage,
       idea: "https://www.instagram.com/__.thesecretchef__?igsh=dW5qaDUxNWo4NXY1",
+      people1: {
+        id: 1,
+        name: "Diganta Dey",
+        designation: "Student",
+        image: tooltip,
+      },
+      people2: {
+        id: 2,
+        name: "Anshita Bhattacharyya",
+        designation: "Student",
+        image: tooltip,
+      },
+      people3: {
+        id: 3,
+        name: "Aditya Narayan",
+        designation: "Student",
+        image: tooltip,
+      },
+      people4: {
+        id: 4,
+        name: " Avishikta SenGupta",
+        designation: "Student",
+        image: tooltip,
+      },
+      people5: {
+        id: 5,
+        name: " Sumit Majumder",
+        designation: "Student",
+        image: tooltip,
+      },
     },
     {
       team: "Book Bridge",
@@ -31,6 +92,36 @@ const Show2024 = () => {
       domain: "Social",
       imageSrc: bookbridgeImage,
       idea: "",
+      people1: {
+        id: 1,
+        name: "Shreya Kutariyar",
+        designation: "Student",
+        image: tooltip,
+      },
+      people2: {
+        id: 2,
+        name: "Snehal Mishra",
+        designation: "Student",
+        image: tooltip,
+      },
+      people3: {
+        id: 3,
+        name: "Eshita Bhattacharjya ",
+        designation: "Student",
+        image: tooltip,
+      },
+      people4: {
+        id: 4,
+        name: "NA",
+        designation: "NA",
+        image: tooltip,
+      },
+      people5: {
+        id: 5,
+        name: "NA",
+        designation: "NA",
+        image: tooltip,
+      },
     },
     {
       team: "TourEase",
@@ -38,6 +129,36 @@ const Show2024 = () => {
       domain: "Travel",
       imageSrc: toureaseImage,
       idea: "",
+      people1: {
+        id: 1,
+        name: "Purbasha Kolley",
+        designation: "Student",
+        image: tooltip,
+      },
+      people2: {
+        id: 2,
+        name: "Soumyadip Kansari",
+        designation: "Student",
+        image: tooltip,
+      },
+      people3: {
+        id: 3,
+        name: "Akash Sardar",
+        designation: "Student",
+        image: tooltip,
+      },
+      people4: {
+        id: 4,
+        name: " Moynak Paul",
+        designation: "Student",
+        image: tooltip,
+      },
+      people5: {
+        id: 5,
+        name: "NA",
+        designation: "NA",
+        image: tooltip,
+      },
     },
     {
       team: "The Future Bearers",
@@ -45,6 +166,36 @@ const Show2024 = () => {
       domain: "Eco-friendly",
       imageSrc: futurebearersImage,
       idea: "",
+      people1: {
+        id: 1,
+        name: "Arya Jha",
+        designation: "Student",
+        image: tooltip,
+      },
+      people2: {
+        id: 2,
+        name: "Bhoomika Dasgupta",
+        designation: "Student",
+        image: tooltip,
+      },
+      people3: {
+        id: 3,
+        name: " Abhraneel Dhar",
+        designation: "Student",
+        image: tooltip,
+      },
+      people4: {
+        id: 4,
+        name: "Tridip Debnath",
+        designation: "Student",
+        image: tooltip,
+      },
+      people5: {
+        id: 5,
+        name: "NA",
+        designation: "NA",
+        image: tooltip,
+      },
     },
   ];
   return (
@@ -90,9 +241,9 @@ const Show2024 = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="m1 9 4-4-4-4"
                     />
                   </svg>
@@ -111,6 +262,11 @@ const Show2024 = () => {
             domain={cardData.domain}
             imageSrc={cardData.imageSrc as unknown as string} // Convert imageSrc to string
             idea={cardData.idea}
+            people1={[cardData.people1]}
+            people2={[cardData.people2]}
+            people3={[cardData.people3]}
+            people4={[cardData.people4]}
+            people5={[cardData.people5]} // Wrap the single object in an array
           />
         ))}
       </div>
