@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import img1 from "../../images/2024theme.jpg";
+import img1 from "../../../public/images/2024theme.jpg";
 import Showcard from "../ui/showcard";
-import phightersImage from "../../images/phighters.jpeg";
-import secretchefImage from "../../images/secret chef.jpg";
-import bookbridgeImage from "../../images/book bridge.png";
-import toureaseImage from "../../images/tour ease.jpg";
-import futurebearersImage from "../../images/future bearers.jpg";
+import phightersImage from "../../../public/images/phighters.jpeg";
+import secretchefImage from "../../../public/images/secret chef.jpg";
+import bookbridgeImage from "../../../public/images/book bridge.png";
+import toureaseImage from "../../../public/images/tour ease.jpg";
+import futurebearersImage from "../../../public/images/future bearers.jpg";
 
 const Show2024 = () => {
   const cardsData = [

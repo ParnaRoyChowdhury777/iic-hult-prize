@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import img1 from "../../images/2023theme.png";
+import img1 from "../../../public/images/2023theme.png";
 import Showcard from "../ui/showcard";
-import dummy from "../../images/dummy.png";
+import dummy from "../../../public/images/dummy.png";
 
 const Show2023 = () => {
   const cardsData = [

@@ -7,38 +7,37 @@ import Typography from "@mui/joy/Typography";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatedTooltip } from "./animated-tooltip";
-import tooltip from "../../images/tooltip.png";
+import tooltip from "../../../public/images/tooltip.png";
+
 
 export default function showcard({ team, tagline, domain, imageSrc, idea }: { team: string, tagline: string, domain: string, imageSrc: string, idea: string }) {
+  
   const people = [
-  {
-    id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
-    image:
-    tooltip,
-  },
-  {
-    id: 2,
-    name: "Robert Johnson",
-    designation: "Product Manager",
-    image:
-      tooltip,
-  },
-  {
-    id: 3,
-    name: "Jane Smith",
-    designation: "Data Scientist",
-    image:
-      tooltip,
-  },
-  {
-    id: 4,
-    name: "Emily Davis",
-    designation: "UX Designer",
-    image: tooltip,
-  },
-];
+    {
+      id: 1,
+      name: "John Doe",
+      designation: "Software Engineer",
+      image:tooltip,
+    },
+    {
+      id: 2,
+      name: "Robert Johnson",
+      designation: "Product Manager",
+      image:tooltip,
+    },
+    {
+      id: 3,
+      name: "Jane Smith",
+      designation: "Data Scientist",
+      image:tooltip,
+    },
+    {
+      id: 4,
+      name: "Emily Davis",
+      designation: "UX Designer",
+      image:tooltip,
+    },
+  ];
   return (
     <div className="">
       {/* <Card
@@ -104,6 +103,7 @@ export default function showcard({ team, tagline, domain, imageSrc, idea }: { te
           </Link>
         </CardContent>
       </Card>
+        <p className="text-center mb-2">Comprises of</p>
       <div className="flex flex-row items-center justify-center mb-10 w-full gap-5">
         <AnimatedTooltip items={people} />
       </div>
