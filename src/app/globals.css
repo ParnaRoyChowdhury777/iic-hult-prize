@@ -111,4 +111,7 @@
       .bg-img-light {
         background-image: radial-gradient(164.75% 100% at 50% 0, #d589bc 0, #efeded 48.73%);
       }
+      .dark .dark\:box-shadow {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.4);
+      }
     }

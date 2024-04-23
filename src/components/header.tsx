@@ -47,7 +47,7 @@ const Header = () => {
           About
         </Link>
         <a
-          href="/"
+          href="/winner"
           className="font-normal hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
         >
           Winner
