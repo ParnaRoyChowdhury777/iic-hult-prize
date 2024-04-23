@@ -1,12 +1,22 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import header from "../header";
+import { useTheme } from "next-themes";
+import { Spotlight } from "../ui/Spotlight";
 
 const About = () => {
+  const [isMounted, setIsMounted] = useState(false);
+  const { theme } = useTheme();
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   return (
     <section className="bg-gray-200 dark:bg-zinc-900 min-h-svh overflow-hidden">
       {header()}
+      {isMounted && theme === "dark" && (
+        <Spotlight fill="#DB2777" className="top-0" />
+      )}
       <div className="container mx-auto px-6 py-10">
         <h2 className="text-6xl mt-10 font-extrabold text-center text-pink-600 dark:text-pink-600">
           About Us
