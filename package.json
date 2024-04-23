@@ -11,10 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
-<<<<<<< HEAD
     "@mui/joy": "5.0.0-beta.32",
-=======
->>>>>>> d53c3955c40a7d47cdaff0ffa426ad12fc1a65b5
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
