@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React,{useState,useEffect} from "react";
 import Image from "next/image";
 import img1 from "../../../public/images/2024theme.jpg";
 import Showcard from "../ui/showcard";
@@ -9,8 +9,14 @@ import bookbridgeImage from "../../../public/images/book bridge.png";
 import toureaseImage from "../../../public/images/tour ease.jpg";
 import futurebearersImage from "../../../public/images/future bearers.jpg";
 import tooltip from "../../../public/images/tooltip.png";
+import { useTheme } from "next-themes";
 
 const Show2024 = () => {
+   const [isMounted, setIsMounted] = useState(false);
+   const { theme } = useTheme();
+   useEffect(() => {
+     setIsMounted(true);
+   }, []);
   const cardsData = [
     {
       team: "pHighters",
@@ -203,7 +209,33 @@ const Show2024 = () => {
     <>
       <div className="flex flex-wrap justify-center items-center">
         <div className="shadow-xl">
-          <div className="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
+          {/* <div
+            className="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700 hover:scale-105 hover:animate-colorChange cursor-pointer  hover:border-2 hover:border-pink-400"
+            style={{
+              width: 320,
+              transition: "0.3s",
+              boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)",
+              "&:hover": { boxShadow: "0 8px 16px 0 rgba(0,0,0,0.6)" },
+            }}
+          > */}
+          <div 
+ className="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700 hover:scale-105 hover:animate-colorChange cursor-pointer dark:bg-gray-400 hover:border-2 hover:border-pink-400"
+ sx={{
+    width: 320,
+    transition: "0.3s",
+    boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)",
+    "&:hover": { boxShadow: "0 8px 16px 0 rgba(0,0,0,0.6)" },
+    "@media (prefers-color-scheme: dark)": {
+      "&:hover": {
+        boxShadow: "none", // Remove the hover effect in dark mode
+        transform: "none", // Remove the scale effect in dark mode
+        borderColor: "transparent", // Remove the border color change in dark mode
+        scale: "none", // Remove the scale effect in dark mode
+
+      },
+    },
+ }}
+>
             <Image
               className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg m-5"
               src={img1}
@@ -211,7 +243,7 @@ const Show2024 = () => {
               width={120}
               height={120}
             />
-            <div className="flex flex-col justify-between p-4 leading-normal cursor-pointer">
+            <div className="flex flex-col justify-between p-4 leading-normal cursor-pointer ">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-pink-600 dark:text-pink-400 text-center">
                 2024 HULT PRIZE CHALLENGE
               </h5>

@@ -17,7 +17,7 @@ export default function showcard({ team, tagline, domain, imageSrc, idea, people
   return (
     <div className="">
       <Card
-        className="bg-pink-50 m-10 border-2 hover:shadow-lg shadow-lg shadow-pink-400/50 transform transition duration-500 ease-in-out hover:scale-105 hover:animate-colorChange cursor-pointer dark:bg-gray-400  "
+        className="bg-pink-50 m-10 border-2 hover:shadow-lg shadow-lg shadow-pink-400/50 transform transition duration-500 ease-in-out hover:scale-105 hover:animate-colorChange cursor-pointer dark:bg-gray-300 "
         sx={{
           width: 320,
           transition: "0.3s",
