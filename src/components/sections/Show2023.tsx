@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import img1 from "../../../public/images/2023theme.png";
@@ -197,10 +198,7 @@ const Show2023 = () => {
     <>
       <div className="flex flex-wrap justify-center items-center">
         <div className="shadow-xl">
-          <a
-            href="#"
-            className="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700"
-          >
+          <div className="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
             <Image
               className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg m-5"
               src={img1}
@@ -220,8 +218,17 @@ const Show2023 = () => {
                 industry to make it more sustainable.
               </p>
               <div className="text-center">
-                <a
+                {/* <a
                   href="https://www.hultprize.org/2023-hult-prize-challenge/"
+                  className="inline-flex items-center font-medium text-pink-600 hover:text-pink-800 dark:text-pink-500 dark:hover:text-pink-700"
+                > */}
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://www.hultprize.org/2024-challenge-unlimited/",
+                      "_blank"
+                    )
+                  }
                   className="inline-flex items-center font-medium text-pink-600 hover:text-pink-800 dark:text-pink-500 dark:hover:text-pink-700"
                 >
                   Learn more
@@ -240,10 +247,11 @@ const Show2023 = () => {
                       d="m1 9 4-4-4-4"
                     />
                   </svg>
-                </a>
+                  {/* </a> */}
+                </button>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
       <div className="flex flex-wrap justify-center items-center">
@@ -267,5 +275,4 @@ const Show2023 = () => {
   );
 };
 
-
-export default Show2023
+export default Show2023;
