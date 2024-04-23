@@ -99,6 +99,7 @@
 
     @layer components {
       .animated-h2 {
+        -webkit-box-reflect: below 1px linear-gradient(60deg, transparent, rgba(0, 1, 0, 0.5));
         animation: animate 1s linear forwards;
       }
       .animated {

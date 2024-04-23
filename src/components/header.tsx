@@ -6,12 +6,12 @@ import { Menu } from "lucide-react";
 
 const header = () => {
   return (
-    <header className="w-full z-[49] shadow-sm shadow-pink-600/50 fixed top-0 bg-slate-200/50 dark:bg-gray-950/50 flex text-[1.1rem] text-[#E6007F] dark:text-zinc-400 h-20 mb-12 font-semibold pb-10">
+    <header className="w-full z-[49] fixed top-0 flex justify-center items-center backdrop-filter backdrop-blur-lg bg-opacity-25 bg-gray-50 dark:bg-gray-950/50 text-sm text-zinc-900 dark:text-slate-300 h-[58px] mb-12 shadow-inner-bottom shadow-pink-600">
       <Link href="https://www.hultprize.org/" target="_blank">
         <Image
-          src="/images/logo.png"
-          width={80}
-          height={80}
+          src="/images/logo_dark.png"
+          width={60}
+          height={60}
           alt="logo"
           className="ml-20 cursor-pointer"
         />
@@ -19,23 +19,23 @@ const header = () => {
       <div className="flex justify-center gap-12 mx-auto mt-2 font-extrabold text-xl">
         <a
           href="/"
-          className="mt-5 hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
+          className="font-normal hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
         >
           Home
         </a>
         <a
           href="#about"
-          className="mt-5 hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
+          className="font-normal hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
         >
           About
         </a>
         <a
           href="/"
-          className="mt-5 hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
+          className="font-normal hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
         >
           Winner
         </a>
-        <span className="relative right-[40px] top-[11px] hidden h-5 w-5 animate-bounce items-center justify-center sm:flex">
+        <span className="relative right-[40px] hidden h-5 w-5 animate-bounce items-center justify-center sm:flex">
           <span className="absolute inline-flex h-full w-full animate-ping rounded bg-[#E0097E] opacity-75"></span>
           <span className="relative inline-flex rounded bg-[#E0097E] p-0.5 px-1 text-xs text-white">
             New
@@ -43,7 +43,7 @@ const header = () => {
         </span>
         <a
           href="/"
-          className="mt-5 hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
+          className="font-normal hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
         >
           Submissions
         </a>

@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 import Header from "../header";
 import { Spotlight } from "../ui/Spotlight";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
@@ -7,23 +8,31 @@ import Image from "next/image";
 import "@/app/globals.css";
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
+import { useTheme } from "next-themes";
 
 const Hero = () => {
+  const [isMounted, setIsMounted] = useState(false);
+  const { theme } = useTheme();
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   return (
     <section className="relative w-full min-h-svh flex flex-col items-center text-center justify-center">
       <Header />
-      <Spotlight fill="#DB2777" className="top-0" />
+      {isMounted && theme === "dark" && (
+        <Spotlight fill="#DB2777" className="top-0" />
+      )}
       <div className="pt-24">
         <HoverBorderGradient
           containerClassName="rounded-full"
           as="button"
-          className="bg-transparent text-pink-600 dark:text-white font-extrabold flex justify-center m-auto items-center space-x-2 border-none outline-none"
+          className="bg-transparent text-zinc-800 dark:text-white font-extrabold flex justify-center m-auto items-center space-x-2 border-none outline-none"
         >
           InnovateUps 📈
         </HoverBorderGradient>
       </div>
-      <div className="text-pink-600 dark:text-slate-200 mt-20 text-4xl md:text-8xl z-50 flex flex-col md:flex-row items-center justify-center md:gap-4 tracking-wider font-extrabold">
-        <span className="py-2 tracking-wider animated dark:animated-h2 text-pink-600 dark:text-slate-200">
+      <div className="text-zinc-600 dark:text-slate-200 mt-20 text-4xl md:text-8xl z-50 flex flex-col md:flex-row items-center justify-center md:gap-4 tracking-wider font-bold">
+        <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200">
           HULT
         </span>
         <Image
@@ -32,7 +41,7 @@ const Hero = () => {
           height={100}
           alt="hult_logo"
         />
-        <span className="py-2 tracking-wider animated dark:animated-h2 text-pink-600 dark:text-slate-200">
+        <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200">
           PRIZE
         </span>
       </div>
@@ -50,9 +59,11 @@ const Hero = () => {
             Know More
           </Button>
         </a>
-        <Button className="text-md bg-pink-600 text-white font-extrabold dark:hover:bg-slate-950 hover:border dark:hover:border-pink-600 hover:transition-all hover:bg-pink-900">
-          Explore
-        </Button>
+        <a>
+          <Button className="text-md bg-pink-600 text-white font-extrabold dark:hover:bg-slate-950 hover:border dark:hover:border-pink-600 hover:transition-all hover:bg-pink-900">
+            Explore
+          </Button>
+        </a>
       </div>
       <div className="text-zinc-700 dark:text-zinc-400 text-3xl mt-12 font-bold">
         Organized by
