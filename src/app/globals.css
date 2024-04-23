@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
   @layer base {
     :root {
@@ -67,11 +67,12 @@
   }
 
   @layer base {
-    * {
-      @apply border-border;
+      /* @apply border-border; */
     }
     body {
-      @apply bg-background text-foreground scroll-smooth;
+      background-color: var(--background);
+      color: var(--foreground);
+      scroll-behavior: smooth;
     } 
     @keyframes animate {
       0% {
@@ -95,14 +96,12 @@
             text-shadow: 0 0 10px #DB2777, 0 0 20px #DB2777, 0 0 40px #DB2777, 0 0 80px #DB2777, 0 0 160px #DB2777;
           }
         }
-  }
 
     @layer components {
       .animated-h2 {
         -webkit-box-reflect: below 1px linear-gradient(70deg, transparent, rgba(0, 0, 0, 0.3));
         animation: animate 1s linear forwards;
       }
-<<<<<<< HEAD
     }
 
         @keyframes colorChange {
@@ -120,7 +119,6 @@
         .hover\:animate-colorChange:hover {
           animation: colorChange 0.5s ease-in-out;
         }
-=======
       .animated {
         animation: none;
       }
@@ -130,5 +128,3 @@
       .bg-img-light {
         background-image: radial-gradient(164.75% 100% at 50% 0, #d589bc 0, #efeded 48.73%);
       }
-    }
->>>>>>> d53c3955c40a7d47cdaff0ffa426ad12fc1a65b5

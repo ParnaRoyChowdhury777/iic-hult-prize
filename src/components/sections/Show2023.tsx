@@ -198,7 +198,8 @@ const Show2023 = () => {
     <>
       <div className="flex flex-wrap justify-center items-center mt-14">
         <div className="shadow-xl">
-          <div className="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
+          {/* <div className="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700"> */}
+          <div className="flex flex-col items-center bg-gray-200 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700 hover:scale-105 hover:animate-colorChange dark:hover:animate-none cursor-pointer hover:border-2 hover:border-pink-400">
             <Image
               className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg m-5"
               src={img1}

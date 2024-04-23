@@ -219,22 +219,7 @@ const Show2024 = () => {
             }}
           > */}
           <div 
- className="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700 hover:scale-105 hover:animate-colorChange cursor-pointer dark:bg-gray-400 hover:border-2 hover:border-pink-400"
- sx={{
-    width: 320,
-    transition: "0.3s",
-    boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)",
-    "&:hover": { boxShadow: "0 8px 16px 0 rgba(0,0,0,0.6)" },
-    "@media (prefers-color-scheme: dark)": {
-      "&:hover": {
-        boxShadow: "none", // Remove the hover effect in dark mode
-        transform: "none", // Remove the scale effect in dark mode
-        borderColor: "transparent", // Remove the border color change in dark mode
-        scale: "none", // Remove the scale effect in dark mode
-
-      },
-    },
- }}
+ className="flex flex-col items-center bg-gray-200 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700 hover:scale-105 hover:animate-colorChange dark:hover:animate-none cursor-pointer hover:border-2 hover:border-pink-400"
 >
             <Image
               className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg m-5"
