@@ -1,25 +1,15 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "../header";
-import { Spotlight } from "../ui/Spotlight";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import Image from "next/image";
 import "@/app/globals.css";
 import { Button } from "../ui/button";
-import { useTheme } from "next-themes";
 
 const Hero = () => {
-  const [isMounted, setIsMounted] = useState(false);
-  const { theme } = useTheme();
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
   return (
     <section className="relative w-full min-h-svh bg-img-light dark:bg-img flex flex-col items-center text-center justify-center overflow-hidden">
       <Header />
-      {isMounted && theme === "dark" && (
-        <Spotlight fill="#DB2777" className="top-0" />
-      )}
       <div className="pt-24">
         <HoverBorderGradient
           containerClassName="rounded-full"
