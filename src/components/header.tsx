@@ -5,7 +5,7 @@ import { ModeToggle } from "@/components/ui/ModeToggle";
 import { Menu } from "lucide-react";
 import { useTheme } from "next-themes";
 
-const header = () => {
+const Header = () => {
   const [isMounted, setIsMounted] = useState(false);
   const { theme } = useTheme();
   useEffect(() => {
@@ -74,4 +74,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;
