@@ -3,6 +3,7 @@ import Image from "next/image";
 import img1 from "../../../public/images/2023theme.png";
 import Showcard from "../ui/showcard";
 import dummy from "../../../public/images/dummy.png";
+import tooltip from "../../../public/images/tooltip.png";
 
 const Show2023 = () => {
   const cardsData = [
@@ -12,14 +13,73 @@ const Show2023 = () => {
       domain: "Domain 1",
       imageSrc: dummy,
       idea: "",
+      people1: {
+        id: 1,
+        name: "Person 1",
+        designation: "Student",
+        image: tooltip,
+      },
+      people2: {
+        id: 2,
+        name: "Person 2",
+        designation: "Student",
+        image: tooltip,
+      },
+      people3: {
+        id: 3,
+        name: "Person 3",
+        designation: "Student",
+        image: tooltip,
+      },
+      people4: {
+        id: 4,
+        name: "Person 4",
+        designation: "Student",
+        image: tooltip,
+      },
+      people5: {
+        id: 5,
+        name: "Person 5",
+        designation: "Student",
+        image: tooltip,
+      },
     },
     {
       team: "Team 2",
-      tagline:
-        "Tagline 2",
+      tagline: "Tagline 2",
       domain: "Domain 2",
       imageSrc: dummy,
       idea: "",
+      people1: {
+        id: 1,
+        name: "Person 1",
+        designation: "Student",
+        image: tooltip,
+      },
+      people2: {
+        id: 2,
+        name: "Person 2",
+        designation: "Student",
+        image: tooltip,
+      },
+      people3: {
+        id: 3,
+        name: "Person 3",
+        designation: "Student",
+        image: tooltip,
+      },
+      people4: {
+        id: 4,
+        name: "Person 4",
+        designation: "Student",
+        image: tooltip,
+      },
+      people5: {
+        id: 5,
+        name: "Person 5",
+        designation: "Student",
+        image: tooltip,
+      },
     },
     {
       team: "Team 3",
@@ -27,6 +87,36 @@ const Show2023 = () => {
       domain: "Domain 3",
       imageSrc: dummy,
       idea: "",
+      people1: {
+        id: 1,
+        name: "Person 1",
+        designation: "Student",
+        image: tooltip,
+      },
+      people2: {
+        id: 2,
+        name: "Person 2",
+        designation: "Student",
+        image: tooltip,
+      },
+      people3: {
+        id: 3,
+        name: "Person 3",
+        designation: "Student",
+        image: tooltip,
+      },
+      people4: {
+        id: 4,
+        name: "Person 4",
+        designation: "Student",
+        image: tooltip,
+      },
+      people5: {
+        id: 5,
+        name: "Person 5",
+        designation: "Student",
+        image: tooltip,
+      },
     },
     {
       team: "Team 4",
@@ -34,6 +124,36 @@ const Show2023 = () => {
       domain: "Domain 4",
       imageSrc: dummy,
       idea: "",
+      people1: {
+        id: 1,
+        name: "Person 1",
+        designation: "Student",
+        image: tooltip,
+      },
+      people2: {
+        id: 2,
+        name: "Person 2",
+        designation: "Student",
+        image: tooltip,
+      },
+      people3: {
+        id: 3,
+        name: "Person 3",
+        designation: "Student",
+        image: tooltip,
+      },
+      people4: {
+        id: 4,
+        name: "Person 4",
+        designation: "Student",
+        image: tooltip,
+      },
+      people5: {
+        id: 5,
+        name: "Person 5",
+        designation: "Student",
+        image: tooltip,
+      },
     },
     {
       team: "Team 5",
@@ -41,6 +161,36 @@ const Show2023 = () => {
       domain: "Domain 5",
       imageSrc: dummy,
       idea: "",
+      people1: {
+        id: 1,
+        name: "Person 1",
+        designation: "Student",
+        image: tooltip,
+      },
+      people2: {
+        id: 2,
+        name: "Person 2",
+        designation: "Student",
+        image: tooltip,
+      },
+      people3: {
+        id: 3,
+        name: "Person 3",
+        designation: "Student",
+        image: tooltip,
+      },
+      people4: {
+        id: 4,
+        name: "Person 4",
+        designation: "Student",
+        image: tooltip,
+      },
+      people5: {
+        id: 5,
+        name: "Person 5",
+        designation: "Student",
+        image: tooltip,
+      },
     },
   ];
   return (
@@ -105,6 +255,11 @@ const Show2023 = () => {
             domain={cardData.domain}
             imageSrc={cardData.imageSrc as unknown as string} // Convert imageSrc to string
             idea={cardData.idea}
+            people1={[cardData.people1]}
+            people2={[cardData.people2]}
+            people3={[cardData.people3]}
+            people4={[cardData.people4]}
+            people5={[cardData.people5]}
           />
         ))}
       </div>
