@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ModeToggle } from "@/components/ui/ModeToggle";
+import { Menu } from "lucide-react";
 
 const header = () => {
   return (
@@ -48,6 +49,10 @@ const header = () => {
         </a>
       </div>
       <ModeToggle />
+      <Menu
+        className="text-white mr-20 cursor-pointer mt-5 md:hidden"
+        size={40}
+      />
     </header>
   );
 };
