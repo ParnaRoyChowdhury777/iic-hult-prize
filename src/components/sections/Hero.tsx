@@ -1,12 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
-
 import Header from "../header";
 import { Spotlight } from "../ui/Spotlight";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import Image from "next/image";
 import "@/app/globals.css";
-import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 import { useTheme } from "next-themes";
 
@@ -17,7 +15,7 @@ const Hero = () => {
     setIsMounted(true);
   }, []);
   return (
-    <section className="relative w-full min-h-svh flex flex-col items-center text-center justify-center">
+    <section className="relative w-full min-h-svh bg-img-light dark:bg-img flex flex-col items-center text-center justify-center overflow-hidden">
       <Header />
       {isMounted && theme === "dark" && (
         <Spotlight fill="#DB2777" className="top-0" />
@@ -54,7 +52,7 @@ const Hero = () => {
       </div>
 
       <div className="flex justify-center gap-16 pt-20">
-        <a href="#about">
+        <a href="/about">
           <Button className="text-md bg-pink-600 text-white font-extrabold dark:hover:bg-slate-950 hover:border dark:hover:border-pink-600 hover:transition-all hover:bg-pink-900">
             Know More
           </Button>

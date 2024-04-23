@@ -91,7 +91,7 @@
           }
     
           100% {
-            color: #ef91b7;
+            color: #141213;
             text-shadow: 0 0 10px #DB2777, 0 0 20px #DB2777, 0 0 40px #DB2777, 0 0 80px #DB2777, 0 0 160px #DB2777;
           }
         }
@@ -99,10 +99,16 @@
 
     @layer components {
       .animated-h2 {
-        -webkit-box-reflect: below 1px linear-gradient(60deg, transparent, rgba(0, 1, 0, 0.5));
+        -webkit-box-reflect: below 1px linear-gradient(70deg, transparent, rgba(0, 0, 0, 0.3));
         animation: animate 1s linear forwards;
       }
       .animated {
         animation: none;
+      }
+      .bg-img {
+        background-image: radial-gradient(164.75% 100% at 50% 0, #6a3047 0, #23121f 48.73%);
+      }
+      .bg-img-light {
+        background-image: radial-gradient(164.75% 100% at 50% 0, #d589bc 0, #efeded 48.73%);
       }
     }

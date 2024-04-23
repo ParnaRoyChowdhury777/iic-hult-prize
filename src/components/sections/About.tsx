@@ -1,15 +1,17 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import header from "../header";
 
 const About = () => {
   return (
-    <section className="bg-gray-200 dark:bg-zinc-900 min-h-svh" id="about">
-      <div className="container mx-auto px-6 py-20">
-        <h2 className="text-6xl font-extrabold text-center text-pink-600 dark:text-pink-600">
+    <section className="bg-gray-200 dark:bg-zinc-900 min-h-svh overflow-hidden">
+      {header()}
+      <div className="container mx-auto px-6 py-10">
+        <h2 className="text-6xl mt-10 font-extrabold text-center text-pink-600 dark:text-pink-600">
           About Us
         </h2>
-        <p className="text-zinc-500 mt-20 text-xl px-10">
+        <p className="text-zinc-500 mt-16 text-xl px-10">
           Embark on a transformative journey of global impact with our year-long
           competition, empowering young minds to tackle humanity&lsquo;s
           greatest challenges head-on through ingenious social ventures. Explore
@@ -35,7 +37,17 @@ const About = () => {
               OnCampus Program, dedicated student volunteers, dubbed Campus
               Directors, spearhead training initiatives and community
               engagements tailored to the annual Challenge, igniting innovation
-              across university campuses.
+              across university campuses.<br></br>
+              <br></br>Assumenda, doloremque temporibus veniam recusandae
+              consequatur at id suscipit distinctio modi repudiandae quaerat
+              perspiciatis voluptate adipisci eligendi excepturi odio sed quasi
+              dignissimos nisi quo. Expedita doloribus sint blanditiis
+              voluptatibus explicabo aliquam a amet repellendus sunt, excepturi
+              voluptas itaque ut nisi quae iste quaerat consequuntur deserunt
+              harum maiores debitis dignissimos nihil possimus. Nostrum officia
+              dicta dignissimos aspernatur qui ullam nisi, tenetur nobis ducimus
+              exercitationem harum alias id a minus odio voluptatibus. Voluptas,
+              est.
             </p>
             <Image
               src="/images/qualifiers.jpg"
@@ -65,7 +77,19 @@ const About = () => {
               before esteemed panels of experts, weaving narratives of
               innovation and impact. Yet, amid the intensity of competition,
               only a select few will emerge victorious, their ideas resonating
-              with judges and peers alike.
+              with judges and peers alike. Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit.
+              <br></br>
+              <br></br>Assumenda, doloremque temporibus veniam recusandae
+              consequatur at id suscipit distinctio modi repudiandae quaerat
+              perspiciatis voluptate adipisci eligendi excepturi odio sed quasi
+              dignissimos nisi quo. Expedita doloribus sint blanditiis
+              voluptatibus explicabo aliquam a amet repellendus sunt, excepturi
+              voluptas itaque ut nisi quae iste quaerat consequuntur deserunt
+              harum maiores debitis dignissimos nihil possimus. Nostrum officia
+              dicta dignissimos aspernatur qui ullam nisi, tenetur nobis ducimus
+              exercitationem harum alias id a minus odio voluptatibus. Voluptas,
+              est.
             </p>
           </div>
         </div>
@@ -81,6 +105,17 @@ const About = () => {
               transformative weeks, they immerse themselves in a world of
               learning and collaboration, rubbing shoulders with world-class
               experts and coaches who fuel their entrepreneurial spirit.
+              <br></br>
+              <br></br>Assumenda, doloremque temporibus veniam recusandae
+              consequatur at id suscipit distinctio modi repudiandae quaerat
+              perspiciatis voluptate adipisci eligendi excepturi odio sed quasi
+              dignissimos nisi quo. Expedita doloribus sint blanditiis
+              voluptatibus explicabo aliquam a amet repellendus sunt, excepturi
+              voluptas itaque ut nisi quae iste quaerat consequuntur deserunt
+              harum maiores debitis dignissimos nihil possimus. Nostrum officia
+              dicta dignissimos aspernatur qui ullam nisi, tenetur nobis ducimus
+              exercitationem harum alias id a minus odio voluptatibus. Voluptas,
+              est.
             </p>
             <Image
               src="/images/ga.jpg"
@@ -108,7 +143,17 @@ const About = () => {
               Global Finals, where six visionary teams take center stage to
               pitch their transformative social ventures to a panel of esteemed
               judges. With the coveted US $1,000,000 Hult Prize on the line, the
-              stakes couldn't be higher.
+              stakes couldn't be higher.<br></br>
+              <br></br>Assumenda, doloremque temporibus veniam recusandae
+              consequatur at id suscipit distinctio modi repudiandae quaerat
+              perspiciatis voluptate adipisci eligendi excepturi odio sed quasi
+              dignissimos nisi quo. Expedita doloribus sint blanditiis
+              voluptatibus explicabo aliquam a amet repellendus sunt, excepturi
+              voluptas itaque ut nisi quae iste quaerat consequuntur deserunt
+              harum maiores debitis dignissimos nihil possimus. Nostrum officia
+              dicta dignissimos aspernatur qui ullam nisi, tenetur nobis ducimus
+              exercitationem harum alias id a minus odio voluptatibus. Voluptas,
+              est.
             </p>
           </div>
         </div>
