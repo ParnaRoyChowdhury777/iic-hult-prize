@@ -11,13 +11,17 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+<<<<<<< HEAD
     "@mui/joy": "5.0.0-beta.32",
+=======
+>>>>>>> d53c3955c40a7d47cdaff0ffa426ad12fc1a65b5
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "framer-motion": "^11.1.7",
     "lucide-react": "^0.372.0",
+    "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.2",
     "next-themes": "^0.3.0",
     "react": "^18",

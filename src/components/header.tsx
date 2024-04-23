@@ -1,43 +1,77 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ModeToggle } from "@/components/ui/ModeToggle";
+import { Menu } from "lucide-react";
+import { useTheme } from "next-themes";
 
-const header = () => {
+const Header = () => {
+  const [isMounted, setIsMounted] = useState(false);
+  const { theme } = useTheme();
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   return (
-    <header className="w-full z-[49] shadow shadow-neutral-700/50 sticky top-0 backdrop-blur bg-gray-950/50 flex text-[1.1rem] text-zinc-300 h-20 font-semibold mb-12 pb-10">
-      <Link href="/">
-        <Image
-          src="/images/logo.png"
-          width={80}
-          height={100}
-          alt="logo"
-          className="ml-20 cursor-pointer"
-        />
+    <header className="w-full z-[49] fixed top-0 flex justify-center items-center backdrop-filter backdrop-blur-lg bg-opacity-25 bg-gray-50 dark:bg-gray-950/50 text-sm text-zinc-900 dark:text-slate-300 h-[58px] mb-12 shadow-inner-bottom shadow-pink-600/70">
+      <Link href="https://www.hultprize.org/" target="_blank">
+        {isMounted && theme === "dark" && (
+          <Image
+            src="/images/logo_dark.png"
+            width={60}
+            height={60}
+            alt="logo"
+            className="ml-20 cursor-pointer"
+          />
+        )}
+        {isMounted && theme === "light" && (
+          <Image
+            src="/images/logo_light.png"
+            width={60}
+            height={60}
+            alt="logo"
+            className="ml-20 cursor-pointer"
+          />
+        )}
       </Link>
-      <div className="flex justify-center gap-12 mx-auto mt-2">
-        <a href="/" className="mt-5 hover:text-pink-600 hover:transition-all">
+      <div className="flex justify-center gap-12 mx-auto mt-2 font-extrabold text-xl">
+        <a
+          href="/"
+          className="font-normal hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
+        >
           Home
         </a>
-        <a href="/" className="mt-5 hover:text-pink-600 hover:transition-all">
+        <Link
+          href="/about"
+          className="font-normal hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
+        >
           About
-        </a>
-        <a href="/" className="mt-5 hover:text-pink-600 hover:transition-all">
+        </Link>
+        <a
+          href="/"
+          className="font-normal hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
+        >
           Winner
         </a>
-        <a href="/" className="mt-5 hover:text-pink-600 hover:transition-all">
-          Submissions 2023
-        </a>
-        <a href="/" className="mt-5 hover:text-pink-600 hover:transition-all">
-          Submissions 2024
-        </a>
-        <a href="/" className="mt-5 hover:text-pink-600 hover:transition-all">
-          Contact
+        <span className="relative right-[40px] hidden h-5 w-5 animate-bounce items-center justify-center sm:flex">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded bg-[#E0097E] opacity-75"></span>
+          <span className="relative inline-flex rounded bg-[#E0097E] p-0.5 px-1 text-xs text-white">
+            New
+          </span>
+        </span>
+        <a
+          href="/"
+          className="font-normal hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
+        >
+          Submissions
         </a>
       </div>
       <ModeToggle />
+      <Menu
+        className="text-white mr-20 cursor-pointer mt-5 md:hidden"
+        size={40}
+      />
     </header>
   );
 };
 
-export default header;
+export default Header;
