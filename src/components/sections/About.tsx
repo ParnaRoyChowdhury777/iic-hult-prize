@@ -26,7 +26,7 @@ const About = () => {
           className="my-20 mx-auto border-2 shadow-md shadow-pink-500 border-pink-600 dark:border-pink-600 rounded-lg"
         />
         <div className="px-10">
-          <span className="text-2xl text-zinc-200 font-extrabold">
+          <span className="text-2xl text-slate-900 dark:text-zinc-200 font-extrabold">
             Step 1: QUALIFIERS
           </span>
           <div className="flex justify-between gap-40 mt-10">
@@ -59,7 +59,7 @@ const About = () => {
           </div>
         </div>
         <div className="px-10 mt-16">
-          <span className="text-2xl text-zinc-200 font-extrabold">
+          <span className="text-2xl text-slate-900 dark:text-zinc-200 font-extrabold">
             Step 2: SUMMITS
           </span>
           <div className="flex justify-between gap-40 mt-10">
@@ -94,7 +94,7 @@ const About = () => {
           </div>
         </div>
         <div className="px-10 mt-16">
-          <span className="text-2xl text-zinc-200 font-extrabold">
+          <span className="text-2xl text-slate-900 dark:text-zinc-200 font-extrabold">
             Step 3: GLOBAL ACCELERATOR
           </span>
           <div className="flex justify-between gap-40 mt-10">
@@ -127,7 +127,7 @@ const About = () => {
           </div>
         </div>
         <div className="px-10 mt-16">
-          <span className="text-2xl text-zinc-200 font-extrabold">
+          <span className="text-2xl text-slate-900 dark:text-zinc-200 font-extrabold">
             Step 4: GLOBAL FINALS
           </span>
           <div className="flex justify-between gap-40 mt-10">
