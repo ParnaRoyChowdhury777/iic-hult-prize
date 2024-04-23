@@ -143,7 +143,7 @@ const About = () => {
               Global Finals, where six visionary teams take center stage to
               pitch their transformative social ventures to a panel of esteemed
               judges. With the coveted US $1,000,000 Hult Prize on the line, the
-              stakes couldn't be higher.<br></br>
+              stakes couldn&apos;t be higher.<br></br>
               <br></br>Assumenda, doloremque temporibus veniam recusandae
               consequatur at id suscipit distinctio modi repudiandae quaerat
               perspiciatis voluptate adipisci eligendi excepturi odio sed quasi
