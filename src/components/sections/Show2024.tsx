@@ -211,8 +211,8 @@ const Show2024 = () => {
               width={120}
               height={120}
             />
-            <div className="flex flex-col justify-between p-4 leading-normal">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-pink-600 dark:text-white text-center">
+            <div className="flex flex-col justify-between p-4 leading-normal cursor-pointer">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-pink-600 dark:text-pink-400 text-center">
                 2024 HULT PRIZE CHALLENGE
               </h5>
               <h4 className="mb-2 text-xl font-bold tracking-tight text-gray-800 dark:text-white text-center">

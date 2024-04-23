@@ -196,7 +196,7 @@ const Show2023 = () => {
   ];
   return (
     <>
-      <div className="flex flex-wrap justify-center items-center">
+      <div className="flex flex-wrap justify-center items-center mt-14">
         <div className="shadow-xl">
           <div className="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
             <Image
@@ -206,8 +206,8 @@ const Show2023 = () => {
               width={150}
               height={150}
             />
-            <div className="flex flex-col justify-between p-4 leading-normal">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-pink-600 dark:text-white text-center">
+            <div className="flex flex-col justify-between p-4 leading-normal cursor-pointer">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-pink-600 dark:text-pink-400 text-center">
                 2023 HULT PRIZE CHALLENGE
               </h5>
               <h4 className="mb-2 text-xl font-bold tracking-tight text-gray-800 dark:text-white text-center">
