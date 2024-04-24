@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Show2024 from "./Show2024";
 import Show2023 from "./Show2023";
