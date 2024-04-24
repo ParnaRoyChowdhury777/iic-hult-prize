@@ -1,16 +1,37 @@
-import React from 'react'
-
+import React, {useState, useEffect} from 'react'
+import { useTheme } from "next-themes";
+import Image from "next/image";
 const footer = () => {
+        const [isMounted, setIsMounted] = useState(false);
+    const { theme } = useTheme();
+
+    useEffect(() => {
+        setIsMounted(true);
+  }, []);
   return (
     <footer className="bg-white rounded-lg shadow dark:bg-black mt-6 ">
     <hr className="my-2 border-gray-300 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div className="w-full max-w-screen-xl mx-auto  md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
             <a href="https://www.iictmsl.com/" className="flex items-center mb-0 ml-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-            <picture>
-                <source srcSet="/images/IIC_WHITE.png" media="(prefers-color-scheme: dark)" />
-                <img src="/images/IIC.png" className="h-8" alt="IIC Logo" />
-            </picture>
+                {isMounted && theme === "dark" && (
+                <Image
+                    src="/images/IIC_WHITE.png"
+                    width={60}
+                    height={60}
+                    alt="logo"
+                    className="ml-20 cursor-pointer"
+                />
+                )}
+                {isMounted && theme === "light" && (
+                <Image
+                    src="/images/IIC.png"
+                    width={60}
+                    height={60}
+                    alt="logo"
+                    className="ml-20 cursor-pointer"
+                />
+                )}
             <span className="self-center text-4xl font-bold whitespace-nowrap navy dark:text-white">TMSL</span>
             </a>
             <ul className="flex flex-wrap items-center mb-0 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
