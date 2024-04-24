@@ -114,4 +114,7 @@
       .dark .dark\:box-shadow {
         box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.4);
       }
+      .navy {
+        color: rgb(10,30,89);
+      }
     }
