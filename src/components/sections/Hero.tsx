@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-[100vh] bg-img-light dark:bg-img flex flex-col items-center text-center justify-center overflow-hidden">
+    <section className="relative w-full min-h-[100vh]  dark:bg-img bg-img-light flex flex-col items-center text-center justify-center overflow-hidden">
       <Header />
       <div className="pt-24">
         <HoverBorderGradient
