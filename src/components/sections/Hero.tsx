@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-[100vh]  dark:bg-img bg-img-light flex flex-col items-center text-center justify-center overflow-hidden">
+    <section className="relative w-full min-h-svh dark:bg-img bg-img-light flex flex-col items-center text-center justify-center overflow-y-hidden">
       <Header />
       <div className="pt-24">
         <HoverBorderGradient
@@ -63,7 +63,7 @@ const Hero = () => {
         </span>
       </div>
 
-      <div className="flex justify-center gap-16 pt-20">
+      <div className="flex justify-center gap-16 pt-8">
         <a href="/about">
           <Button className="text-md bg-pink-600 text-white font-extrabold dark:hover:bg-slate-950 hover:border dark:hover:border-pink-600 hover:transition-all hover:bg-pink-900">
             Know More
@@ -77,7 +77,7 @@ const Hero = () => {
       </div>
       <div className="text-zinc-700 dark:text-zinc-400 text-3xl mt-12 font-bold">
         Organized by
-        <div className="flex justify-center gap-10 mt-12">
+        <div className="flex justify-center gap-10 mt-9">
           <a href="https://www.iictmsl.com/" target="_blank">
             <Image
               src="/images/iic_logo.jpg"
