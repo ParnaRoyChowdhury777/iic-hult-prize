@@ -101,6 +101,17 @@
       .animated-h2 {
         animation: animate 1s linear forwards;
       }
+      .animated {
+        animation: none;
+      }
+
+      .bg-img {
+        background-image: radial-gradient(164.75% 100% at 50% 0, #3f2932 0, #191017 48.73%);
+      }
+
+      .bg-img-light {
+        background-image: radial-gradient(164.75% 100% at 50% 0, #d589bc 0, #efeded 48.73%);
+      }
     }
 
         @keyframes colorChange {
@@ -118,12 +129,4 @@
         .hover\:animate-colorChange:hover {
           animation: colorChange 0.5s ease-in-out;
         }
-      .animated {
-        animation: none;
-      }
-      .bg-img {
-        background-image: radial-gradient(164.75% 100% at 50% 0, #3f2932 0, #191017 48.73%);
-      }
-      .bg-img-light {
-        background-image: radial-gradient(164.75% 100% at 50% 0, #d589bc 0, #efeded 48.73%);
-      }
+      
