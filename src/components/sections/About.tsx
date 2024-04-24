@@ -39,7 +39,7 @@ const About = () => {
           <span className="text-2xl text-slate-900 dark:text-zinc-200 font-extrabold">
             Step 1: QUALIFIERS
           </span>
-          <div className="flex flex-wrap sm:flex-nowrap justify-between gap-40 mt-10">
+          <div className="flex flex-wrap sm:flex-nowrap justify-between sm:gap-40 gap-10 mt-10">
             <p className="text-justify">
               The inaugural stage of the Hult Prize competition unfolds through
               a dynamic synergy of the OnCampus Program and the Open
@@ -62,7 +62,7 @@ const About = () => {
           <span className="text-2xl text-slate-900 dark:text-zinc-200 font-extrabold">
             Step 2: SUMMITS
           </span>
-          <div className="flex flex-wrap sm:flex-nowrap justify-between gap-40 mt-10">
+          <div className="flex flex-wrap sm:flex-nowrap justify-between sm:gap-40 gap-10 mt-10">
             <Image
               src="/images/summit.jpg"
               alt="summit"
@@ -86,7 +86,7 @@ const About = () => {
           <span className="text-2xl text-slate-900 dark:text-zinc-200 font-extrabold">
             Step 3: GLOBAL ACCELERATOR
           </span>
-          <div className="flex flex-wrap sm:flex-nowrap justify-between gap-40 mt-10">
+          <div className="flex flex-wrap sm:flex-nowrap justify-between sm:gap-40 gap-10 mt-10">
             <p className="text-justify">
               As the summer unfolds, anticipation mounts as these aspiring
               changemakers converge in the vibrant city of London, UK, for our
@@ -108,7 +108,7 @@ const About = () => {
           <span className="text-2xl text-slate-900 dark:text-zinc-200 font-extrabold">
             Step 4: GLOBAL FINALS
           </span>
-          <div className="flex flex-wrap sm:flex-nowrap justify-between gap-40 mt-10">
+          <div className="flex flex-wrap sm:flex-nowrap justify-between sm:gap-40 gap-10 mt-10">
             <Image
               src="/images/finals.jpg"
               alt="finals"
