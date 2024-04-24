@@ -198,7 +198,6 @@ const Show2023 = () => {
     <>
       <div className="flex flex-wrap justify-center items-center mt-14">
         <div className="shadow-xl">
-          {/* <div className="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700"> */}
           <div className="flex flex-col items-center bg-gray-200 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 hover:scale-105 hover:animate-colorChange dark:hover:animate-none cursor-pointer hover:border-2 hover:border-pink-400">
             <Image
               className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg m-5"
@@ -219,10 +218,6 @@ const Show2023 = () => {
                 industry to make it more sustainable.
               </p>
               <div className="text-center">
-                {/* <a
-                  href="https://www.hultprize.org/2023-hult-prize-challenge/"
-                  className="inline-flex items-center font-medium text-pink-600 hover:text-pink-800 dark:text-pink-500 dark:hover:text-pink-700"
-                > */}
                 <button
                   onClick={() =>
                     window.open(
@@ -248,7 +243,6 @@ const Show2023 = () => {
                       d="m1 9 4-4-4-4"
                     />
                   </svg>
-                  {/* </a> */}
                 </button>
               </div>
             </div>
