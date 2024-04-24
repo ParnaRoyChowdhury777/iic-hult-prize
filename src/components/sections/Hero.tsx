@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-svh bg-img-light dark:bg-img flex flex-col items-center text-center justify-center overflow-hidden">
+    <section className="relative w-full min-h-vh bg-img-light dark:bg-img flex flex-col items-center text-center justify-center overflow-hidden">
       <Header />
       <div className="pt-24">
         <HoverBorderGradient
@@ -19,7 +19,7 @@ const Hero = () => {
           InnovateUps 📈
         </HoverBorderGradient>
       </div>
-      
+
       <div className="text-zinc-600 dark:text-slate-200 mt-20 text-4xl md:text-8xl z-50 flex flex-col md:flex-row items-center justify-center md:gap-4 tracking-wider font-bold">
         <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200">
           HULT
@@ -30,7 +30,10 @@ const Hero = () => {
           height={100}
           alt="hult_logo"
         />
-        <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200" style={{ textShadow: "0 0 5px rgba(0, 0, 0, 0.3)" }}>
+        <span
+          className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200"
+          style={{ textShadow: "0 0 5px rgba(0, 0, 0, 0.3)" }}
+        >
           PRIZE
         </span>
       </div>
@@ -52,7 +55,10 @@ const Hero = () => {
           height={100}
           alt="hult_logo"
         />
-        <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200" style={{ textShadow: "0 0 5px rgba(0, 0, 0, 0.3)" }}>
+        <span
+          className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200"
+          style={{ textShadow: "0 0 5px rgba(0, 0, 0, 0.3)" }}
+        >
           PRIZE
         </span>
       </div>
