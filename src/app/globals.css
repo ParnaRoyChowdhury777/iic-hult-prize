@@ -99,22 +99,21 @@
 
     @layer components {
       .animated-h2 {
-        -webkit-box-reflect: below 1px linear-gradient(70deg, transparent, rgba(0, 0, 0, 0.3));
         animation: animate 1s linear forwards;
       }
       .animated {
         animation: none;
       }
       .bg-img {
-        background-image: radial-gradient(164.75% 100% at 50% 0, #6a3047 0, #23121f 48.73%);
+        background-image: radial-gradient(164.75% 100% at 50% 0, #3f2932 0, #191017 48.73%);
       }
       .bg-img-light {
         background-image: radial-gradient(164.75% 100% at 50% 0, #d589bc 0, #efeded 48.73%);
       }
-      .dark .dark\:box-shadow {
-        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.4);
-      }
-      .navy {
-        color: rgb(10,30,89);
-      }
     }
+
+
+.backface-one{
+  transform: rotateX(180deg);
+  margin-top: -3rem;
+}

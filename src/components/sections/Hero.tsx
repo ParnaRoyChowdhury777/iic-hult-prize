@@ -1,25 +1,15 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "../header";
-import { Spotlight } from "../ui/Spotlight";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import Image from "next/image";
 import "@/app/globals.css";
 import { Button } from "../ui/button";
-import { useTheme } from "next-themes";
 
 const Hero = () => {
-  const [isMounted, setIsMounted] = useState(false);
-  const { theme } = useTheme();
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
   return (
     <section className="relative w-full min-h-svh bg-img-light dark:bg-img flex flex-col items-center text-center justify-center overflow-hidden">
       <Header />
-      {isMounted && theme === "dark" && (
-        <Spotlight fill="#DB2777" className="top-0" />
-      )}
       <div className="pt-24">
         <HoverBorderGradient
           containerClassName="rounded-full"
@@ -29,6 +19,7 @@ const Hero = () => {
           InnovateUps 📈
         </HoverBorderGradient>
       </div>
+      
       <div className="text-zinc-600 dark:text-slate-200 mt-20 text-4xl md:text-8xl z-50 flex flex-col md:flex-row items-center justify-center md:gap-4 tracking-wider font-bold">
         <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200">
           HULT
@@ -39,7 +30,7 @@ const Hero = () => {
           height={100}
           alt="hult_logo"
         />
-        <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200">
+        <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200" style={{ textShadow: "0 0 5px rgba(0, 0, 0, 0.3)" }}>
           PRIZE
         </span>
       </div>
@@ -49,6 +40,21 @@ const Hero = () => {
         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-3/4" />
         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-[5px] w-1/4 blur-sm" />
         <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-1/4" />
+      </div>
+
+      <div className="text-zinc-600 dark:text-slate-200 text-4xl md:text-8xl z-50 flex flex-col md:flex-row items-center justify-center md:gap-4 tracking-wider font-bold backface-one opacity-50 blur-sm">
+        <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200">
+          HULT
+        </span>
+        <Image
+          src="/images/hult_logo.png"
+          width={100}
+          height={100}
+          alt="hult_logo"
+        />
+        <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200" style={{ textShadow: "0 0 5px rgba(0, 0, 0, 0.3)" }}>
+          PRIZE
+        </span>
       </div>
 
       <div className="flex justify-center gap-16 pt-20">
