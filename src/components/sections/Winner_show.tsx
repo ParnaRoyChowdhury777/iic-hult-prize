@@ -9,10 +9,8 @@ const Winner_show = () => {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
 
     const scrollToSection = () => {
-        // Find the section to scroll to
+        
         const section = document.getElementById('imageSection');
-
-        // Scroll to the section smoothly
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
         }
