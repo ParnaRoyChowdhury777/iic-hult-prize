@@ -57,13 +57,6 @@ const Hero = () => {
         </span>
       </div>
 
-      <div className="w-[40rem] relative pb-10">
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-[2px] w-3/4 blur-sm" />
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-3/4" />
-        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-[5px] w-1/4 blur-sm" />
-        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-1/4" />
-      </div>
-
       <div className="flex justify-center gap-16 pt-20">
         <a href="/about">
           <Button className="text-md bg-pink-600 text-white font-extrabold dark:hover:bg-slate-950 hover:border dark:hover:border-pink-600 hover:transition-all hover:bg-pink-900">
