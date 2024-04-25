@@ -5,12 +5,15 @@ import { ModeToggle } from "@/components/ui/ModeToggle";
 import { Menu } from "lucide-react";
 import { useTheme } from "next-themes";
 
+
 const Header = () => {
   const [isMounted, setIsMounted] = useState(false);
   const { theme } = useTheme();
+
   useEffect(() => {
     setIsMounted(true);
   }, []);
+
   return (
     <header className="w-full z-[49] fixed top-0 flex justify-center items-center backdrop-filter backdrop-blur-lg bg-opacity-25 bg-gray-50 dark:bg-gray-950/50 text-sm text-zinc-900 dark:text-slate-300 h-[58px] mb-12 shadow-inner-bottom shadow-pink-600/70">
       <Link href="https://www.hultprize.org/" target="_blank">
@@ -46,12 +49,12 @@ const Header = () => {
         >
           About
         </Link>
-        <a
-          href="/"
+        <Link
+          href="/winner"
           className="font-normal hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
         >
           Winner
-        </a>
+        </Link>
         <span className="relative right-[40px] hidden h-5 w-5 animate-bounce items-center justify-center sm:flex">
           <span className="absolute inline-flex h-full w-full animate-ping rounded bg-[#E0097E] opacity-75"></span>
           <span className="relative inline-flex rounded bg-[#E0097E] p-0.5 px-1 text-xs text-white">
@@ -70,6 +73,7 @@ const Header = () => {
         className="text-white mr-20 cursor-pointer mt-5 md:hidden"
         size={40}
       />
+       
     </header>
   );
 };
