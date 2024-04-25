@@ -209,15 +209,6 @@ const Show2024 = () => {
     <>
       <div className="flex flex-wrap justify-center items-center">
         <div className="shadow-xl">
-          {/* <div
-            className="flex flex-col items-center bg-gray-100 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700 hover:scale-105 hover:animate-colorChange cursor-pointer  hover:border-2 hover:border-pink-400"
-            style={{
-              width: 320,
-              transition: "0.3s",
-              boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)",
-              "&:hover": { boxShadow: "0 8px 16px 0 rgba(0,0,0,0.6)" },
-            }}
-          > */}
           <div 
  className="flex flex-col items-center bg-gray-200 border border-gray-300 rounded-xl shadow md:flex-row md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 hover:scale-105 hover:animate-colorChange dark:hover:animate-none cursor-pointer hover:border-2 hover:border-pink-400"
 >
@@ -242,10 +233,6 @@ const Show2024 = () => {
                 (SDGs).
               </p>
               <div className="text-center">
-                {/* <a
-                  href="https://www.hultprize.org/2024-challenge-unlimited/"
-                  className="inline-flex items-center font-medium text-pink-600 hover:text-pink-800 dark:text-pink-500 dark:hover:text-pink-700"
-                > */}
                 <button
                   onClick={() =>
                     window.open(
