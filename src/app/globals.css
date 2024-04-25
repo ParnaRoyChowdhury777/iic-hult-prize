@@ -110,8 +110,8 @@ body {
   .bg-img {
     background-image: radial-gradient(
       164.75% 100% at 50% 0,
-      #3f2932 0,
-      #191017 48.73%
+      #f87fb178 0,
+      #020617 48.73%
     );
   }
 
@@ -119,7 +119,7 @@ body {
     background-image: radial-gradient(
       164.75% 100% at 50% 0,
       #d589bc 0,
-      #efeded 48.73%
+      #f9fafb 48.73%
     );
   }
   .backface-one {

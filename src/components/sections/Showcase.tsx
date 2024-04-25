@@ -6,7 +6,6 @@ import Header from "../header";
 import { Spotlight } from "../ui/Spotlight";
 import { useTheme } from "next-themes";
 
-
 const Showcase = () => {
   const [isMounted, setIsMounted] = useState(false);
   const { theme } = useTheme();
@@ -19,12 +18,10 @@ const Showcase = () => {
       {isMounted && theme === "dark" && (
         <Spotlight fill="#DB2777" className="top-0" />
       )}
-      <div className="bg-gray-50 dark:bg-slate-950">
-        <h1 className="text-center m-5 mb-10 text-5xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-4xl mt-20">
-          <span className=" text-transparent bg-clip-text bg-gradient-to-r to-pink-500 from-rose-600 text-5xl dark:text-white dark:text-current">
-            SUBMISSIONS SHOWCASE
-          </span>{" "}
-        </h1>
+      <div className="bg-gray-50 dark:bg-slate-950 mx-auto px-6 py-10">
+        <h2 className="text-4xl md:text-6xl mt-10 mb-8 font-extrabold text-center text-pink-600">
+          SUBMISSIONS SHOWCASE
+        </h2>
         <Show2024 />
         <Show2023 />
       </div>
