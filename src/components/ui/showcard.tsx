@@ -8,7 +8,6 @@ import Typography from "@mui/joy/Typography";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatedTooltip } from "./animated-tooltip";
-import tooltip from "../../../public/images/tooltip.png";
 import { StaticImageData } from "next/image";
 
 export default function showcard({ team, tagline, domain, imageSrc, idea, people1,people2,people3,people4,people5 }: { team: string, tagline: string, domain: string, imageSrc: string, idea: string, people1: { id: number; name: string; designation: string; image: StaticImageData; }[],people2: { id: number; name: string; designation: string; image: StaticImageData; }[],people3: { id: number; name: string; designation: string; image: StaticImageData; }[] ,people4: { id: number; name: string; designation: string; image: StaticImageData; }[],people5: { id: number; name: string; designation: string; image: StaticImageData; }[]}) {
@@ -61,7 +60,6 @@ export default function showcard({ team, tagline, domain, imageSrc, idea, people
                 className="bg-pink-600 hover:bg-pink-800"
                 variant="solid"
                 size="md"
-                color="primary"
                 aria-label="Explore"
                 sx={{ fontWeight: 600 }}
               >
