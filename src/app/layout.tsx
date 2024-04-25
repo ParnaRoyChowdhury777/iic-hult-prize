@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/footer";
+import Floating_footer from "@/components/sections/floating_footer";
 const inter = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,6 +26,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Footer />
+          <Floating_footer />
         </ThemeProvider>
       </body>
     </html>

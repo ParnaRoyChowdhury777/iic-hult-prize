@@ -6,6 +6,7 @@ import Header from "../header";
 import { Spotlight } from "../ui/Spotlight";
 import { useTheme } from "next-themes";
 
+
 const Showcase = () => {
   const [isMounted, setIsMounted] = useState(false);
   const { theme } = useTheme();
