@@ -40,11 +40,7 @@ export const StickyScroll = ({
     setActiveCard(closestBreakpointIndex);
   });
 
-  const backgroundColors = [
-    "var(--neutral-900)",
-    "var(--neutral-900)",
-    "var(--neutral-900)",
-  ];
+  const backgroundColors = ["transparent", "transparent", "transparent"];
   const linearGradients = ["transparent", "transparent", "transparent"];
   return (
     <motion.div
@@ -65,7 +61,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-2xl font-bold text-slate-100"
+                className="text-2xl font-bold text-pink-600 dark:text-slate-100"
               >
                 {item.title}
               </motion.h2>
@@ -76,7 +72,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg text-slate-300 max-w-sm mt-10"
+                className="text-kg text-neutral-800 dark:text-slate-300 max-w-sm mt-10"
               >
                 {item.description}
               </motion.p>
@@ -90,7 +86,7 @@ export const StickyScroll = ({
           background: linearGradients[activeCard % linearGradients.length],
         }}
         className={cn(
-          "hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden",
+          "hidden lg:block h-64 w-96 rounded-md bg-white sticky top-10 overflow-hidden",
           contentClassName
         )}
       >
