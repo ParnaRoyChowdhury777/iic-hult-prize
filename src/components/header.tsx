@@ -62,7 +62,7 @@ const Header = () => {
           </span>
         </span>
         <a
-          href="/"
+          href="/showcase"
           className="font-normal hover:text-zinc-500 dark:hover:text-pink-600 hover:transition-all"
         >
           Submissions

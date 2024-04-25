@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-svh bg-img-light dark:bg-img flex flex-col items-center text-center justify-center overflow-hidden">
+    <section className="relative w-full min-h-screen dark:bg-img bg-img-light flex flex-col items-center text-center justify-center overflow-y-hidden">
       <Header />
       <div className="pt-24">
         <HoverBorderGradient
@@ -19,7 +19,7 @@ const Hero = () => {
           InnovateUps 📈
         </HoverBorderGradient>
       </div>
-      
+
       <div className="text-zinc-600 dark:text-slate-200 mt-20 text-4xl md:text-8xl z-50 flex flex-col md:flex-row items-center justify-center md:gap-4 tracking-wider font-bold">
         <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200">
           HULT
@@ -30,7 +30,10 @@ const Hero = () => {
           height={100}
           alt="hult_logo"
         />
-        <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200" style={{ textShadow: "0 0 5px rgba(0, 0, 0, 0.3)" }}>
+        <span
+          className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200"
+          style={{ textShadow: "0 0 5px rgba(0, 0, 0, 0.3)" }}
+        >
           PRIZE
         </span>
       </div>
@@ -52,12 +55,15 @@ const Hero = () => {
           height={100}
           alt="hult_logo"
         />
-        <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200" style={{ textShadow: "0 0 5px rgba(0, 0, 0, 0.3)" }}>
+        <span
+          className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200"
+          style={{ textShadow: "0 0 5px rgba(0, 0, 0, 0.3)" }}
+        >
           PRIZE
         </span>
       </div>
 
-      <div className="flex justify-center gap-16 pt-20">
+      <div className="flex justify-center gap-16 pt-8">
         <a href="/about">
           <Button className="text-md bg-pink-600 text-white font-extrabold dark:hover:bg-slate-950 hover:border dark:hover:border-pink-600 hover:transition-all hover:bg-pink-900">
             Know More
@@ -71,7 +77,7 @@ const Hero = () => {
       </div>
       <div className="text-zinc-700 dark:text-zinc-400 text-3xl mt-12 font-bold">
         Organized by
-        <div className="flex justify-center gap-10 mt-12">
+        <div className="flex justify-center gap-10 mt-9">
           <a href="https://www.iictmsl.com/" target="_blank">
             <Image
               src="/images/iic_logo.jpg"
