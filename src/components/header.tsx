@@ -5,7 +5,6 @@ import { ModeToggle } from "@/components/ui/ModeToggle";
 import { Menu } from "lucide-react";
 import { useTheme } from "next-themes";
 
-
 const Header = () => {
   const [isMounted, setIsMounted] = useState(false);
   const { theme } = useTheme();
@@ -73,7 +72,6 @@ const Header = () => {
         className="text-white mr-20 cursor-pointer mt-5 md:hidden"
         size={40}
       />
-       
     </header>
   );
 };
