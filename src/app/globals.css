@@ -147,3 +147,10 @@ body {
 ::-webkit-scrollbar {
   width: 0px;
 }
+
+.expbtn{
+  background-color: rgb(243, 24, 170);
+}
+.cdcs{
+  background-color: #fce4f2;
+}
