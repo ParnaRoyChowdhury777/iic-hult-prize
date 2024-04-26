@@ -112,29 +112,8 @@ const Winner_show = () => {
             </div>
           </CardContent>
           <CardFooter className="flex justify-between items-center p-6">
-            {/* <div className="flex -space-x-4 rtl:space-x-reverse">
-              <Image
-                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                src={avatar1}
-                alt=""
-              />
-              <Image
-                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                src={avatar1}
-                alt=""
-              />
-              <Image
-                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                src={avatar1}
-                alt=""
-              />
-              <Image
-                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                src={avatar1}
-                alt=""
-              />
-            </div> */}
-            <div className="flex flex-row items-center justify-center mb-3 w-full gap-3 ">
+           
+            <div className="flex flex-row items-center justify-start mb-2 w-full gap-1 ">
               <AnimatedTooltip
                 items={people.map((item) => ({
                   ...item,
