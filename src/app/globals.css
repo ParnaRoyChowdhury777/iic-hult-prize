@@ -126,6 +126,9 @@ body {
     transform: rotateX(180deg);
     margin-top: -3rem;
   }
+  .cdcs {
+    background-color: #fce4f2;
+  }
 }
 
 @keyframes colorChange {
@@ -150,8 +153,4 @@ body {
 
 .expbtn {
   background-color: rgb(243, 24, 170);
-}
-
-.cdcs {
-  background-color: #fce4f2;
 }
