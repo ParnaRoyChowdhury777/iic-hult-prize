@@ -129,6 +129,9 @@ body {
   .shadow-custom{
     box-shadow: "16px 12px 14px 0 rgba(252, 0, 125, 0.8)";
   }
+  .cdcs {
+    background-color: #fce4f2;
+  }
 }
 
 @keyframes colorChange {
@@ -151,9 +154,6 @@ body {
   width: 0px;
 }
 
-.expbtn{
+.expbtn {
   background-color: rgb(243, 24, 170);
-}
-.cdcs{
-  background-color: #fce4f2;
 }

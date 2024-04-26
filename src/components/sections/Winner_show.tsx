@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState,useEffect } from "react";
 import {
   Card,
@@ -13,6 +12,7 @@ import Header from "../header";
 import Confetti from "react-confetti";
 import { useTheme } from "next-themes";
 import { Spotlight } from "../ui/Spotlight";
+
 const Winner_show = () => {
   
     const [isMounted, setIsMounted] = useState(false);

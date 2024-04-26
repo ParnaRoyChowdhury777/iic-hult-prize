@@ -276,7 +276,7 @@ const Show2024 = () => {
             people2={[cardData.people2]}
             people3={[cardData.people3]}
             people4={[cardData.people4]}
-            people5={[cardData.people5]} // Wrap the single object in an array
+            people5={[cardData.people5]}
           />
         ))}
       </div>
