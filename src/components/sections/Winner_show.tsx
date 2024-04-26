@@ -12,6 +12,47 @@ import Header from "../header";
 import Confetti from "react-confetti";
 import { useTheme } from "next-themes";
 import { Spotlight } from "../ui/Spotlight";
+import Image from "next/image";
+import logo1 from "../../../public/images/logo-1.png";
+import avatar1 from "../../../public/images/avatar-1.png";
+import winner1 from "../../../public/images/winner-1.jpg";
+import winner2 from "../../../public/images/winner-2.jpg";
+import winner3 from "../../../public/images/winner-3.jpg";
+import winner4 from "../../../public/images/winner-4.jpg";
+import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
+import { StaticImageData } from "next/image";
+const people = [
+  {
+    id: 1,
+    name: "Person 1",
+    designation: "Student",
+    image: { avatar1 },
+  },
+  {
+    id: 2,
+    name: "Person 2",
+    designation: "Student",
+    image: { avatar1 },
+  },
+  {
+    id: 3,
+    name: "Person 3",
+    designation: "Student",
+    image: { avatar1 },
+  },
+  {
+    id: 4,
+    name: "Person 4",
+    designation: "Student",
+    image: { avatar1 },
+  },
+  {
+    id: 5,
+    name: "Person 5",
+    designation: "Student",
+    image: { avatar1 },
+  },
+];
 
 const Winner_show = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -50,8 +91,8 @@ const Winner_show = () => {
           </CardHeader>
           <CardContent>
             <div className="flex items-center">
-              <img
-                src="/images/logo-1.png"
+              <Image
+                src={logo1}
                 alt="Card Image"
                 className="w-20 h-25"
                 height={150}
@@ -71,26 +112,13 @@ const Winner_show = () => {
             </div>
           </CardContent>
           <CardFooter className="flex justify-between items-center p-6">
-            <div className="flex -space-x-4 rtl:space-x-reverse">
-              <img
-                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                src="/images/avatar-1.png"
-                alt=""
-              />
-              <img
-                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                src="/images/avatar-1.png"
-                alt=""
-              />
-              <img
-                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                src="/images/avatar-1.png"
-                alt=""
-              />
-              <img
-                className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                src="/images/avatar-1.png"
-                alt=""
+           
+            <div className="flex flex-row items-center justify-start mb-2 w-full gap-1 ">
+              <AnimatedTooltip
+                items={people.map((item) => ({
+                  ...item,
+                  image: item.image.avatar1,
+                }))}
               />
             </div>
             <div className="flex items-center">
@@ -105,7 +133,7 @@ const Winner_show = () => {
         </Card>
         <section
           id="imageSection"
-          className="flex flex-col flex-wrap md:flex-nowrap items-center justify-center mt-8 px-10 "
+          className="flex flex-col flex-wrap md:flex-nowrap items-center justify-center mt-8 px-24 "
         >
           <p className="text-semibold text-center mx-auto mb-8 px-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
@@ -116,7 +144,7 @@ const Winner_show = () => {
             ipsa ipsam deleniti officiis eveniet laboriosam dicta exercitationem
             magni officia sed veniam libero suscipit at voluptatum aspernatur.
           </p>
-          <div className="flex md:grid md:grid-cols-5 gap-4 p-8 mx-auto flex-wrap">
+          <div className="grid grid-cols-5 gap-4 p-8 mx-auto">
             <img
               src="/images/winner-1.JPG"
               alt="Image 1"
@@ -160,7 +188,6 @@ const Winner_show = () => {
               alt="Image 3"
               className="col-span-2 h-50 w-50 rounded-lg border-2 border-pink-500"
             />
-
             <img
               src="/images/winner-4.JPG"
               alt="Image 4"
