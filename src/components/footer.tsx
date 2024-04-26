@@ -41,12 +41,13 @@ const Footer = () => {
               TMSL
             </span>
           </div>
-          <ul className="flex flex-wrap gap-5 justify-center md:justify-end items-center text-sm font-medium text-gray-500 md:mb-0 dark:text-gray-400 hover:text-pink-600">
+          <ul className="flex flex-wrap gap-5 justify-center md:justify-end items-center text-sm font-medium text-gray-500 md:mb-0 dark:text-gray-400">
             <li className="mb-2 md:mb-0">
               <a
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-pink-600"
               >
                 <Facebook size={20} />
               </a>
@@ -56,6 +57,7 @@ const Footer = () => {
                 href="https://www.twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-pink-600"
               >
                 <Twitter size={20} />
               </a>
@@ -65,6 +67,7 @@ const Footer = () => {
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-pink-600"
               >
                 <Linkedin size={20} />
               </a>
@@ -74,6 +77,7 @@ const Footer = () => {
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-pink-600"
               >
                 <Instagram size={20} />
               </a>
