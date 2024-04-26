@@ -144,18 +144,18 @@ const Winner_show = () => {
                 rerum molestiae, voluptatum nam hic voluptatibus. Omnis quo at
                 laborum ratione porro sint magnam nam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione expedita, assumenda accusamus nostrum totam, consectetur quaerat accusantium excepturi cupiditate obcaecati est atque. lorem50
                 </p>
-                <img
-                src="/images/winner-2.JPG"
+                <Image
+                src={winner2}
                 alt="Image 2"
                 className="col-span-2 h-50 w-50 rounded-lg border-2 border-pink-500"
                 />
-                <img
-                src="/images/winner-3.JPG"
+                <Image
+                src={winner3}
                 alt="Image 3"
                 className="col-span-2 h-50 w-50 rounded-lg border-2 border-pink-500"
                 />
-                <img
-                src="/images/winner-4.JPG"
+                <Image
+                src={winner4}
                 alt="Image 4"
                 className="col-span-3 h-50 w-50 rounded-lg border-2 border-pink-500"
                 />
