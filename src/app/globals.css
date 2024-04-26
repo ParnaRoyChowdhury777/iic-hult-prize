@@ -1,136 +1,156 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-  @layer base {
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 222.2 84% 4.9%;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
-      --card: 0 0% 100%;
-      --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
 
-      --popover: 0 0% 100%;
-      --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
-      --primary: 222.2 47.4% 11.2%;
-      --primary-foreground: 210 40% 98%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-      --secondary: 210 40% 96.1%;
-      --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-      --muted: 210 40% 96.1%;
-      --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-      --accent: 210 40% 96.1%;
-      --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-      --border: 214.3 31.8% 91.4%;
-      --input: 214.3 31.8% 91.4%;
-      --ring: 222.2 84% 4.9%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
 
-      --radius: 0.5rem;
-    }
-
-    .dark {
-      --background: 222.2 84% 4.9%;
-      --foreground: 210 40% 98%;
-
-      --card: 222.2 84% 4.9%;
-      --card-foreground: 210 40% 98%;
-
-      --popover: 222.2 84% 4.9%;
-      --popover-foreground: 210 40% 98%;
-
-      --primary: 210 40% 98%;
-      --primary-foreground: 222.2 47.4% 11.2%;
-
-      --secondary: 217.2 32.6% 17.5%;
-      --secondary-foreground: 210 40% 98%;
-
-      --muted: 217.2 32.6% 17.5%;
-      --muted-foreground: 215 20.2% 65.1%;
-
-      --accent: 217.2 32.6% 17.5%;
-      --accent-foreground: 210 40% 98%;
-
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 210 40% 98%;
-
-      --border: 217.2 32.6% 17.5%;
-      --input: 217.2 32.6% 17.5%;
-      --ring: 212.7 26.8% 83.9%;
-    }
+    --radius: 0.5rem;
   }
 
-  @layer base {
-      /* @apply border-border; */
-    }
-    body {
-      background-color: var(--background);
-      color: var(--foreground);
-      scroll-behavior: smooth;
-    } 
-    @keyframes animate {
-      0% {
-        color: #DB2777;
-        text-shadow: none;
-      }
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-      100% {
-        color: #fff;
-        text-shadow: 0 0 10px #DB2777, 0 0 20px #DB2777, 0 0 40px #DB2777, 0 0 80px #DB2777, 0 0 160px #DB2777;
-      }
-    }
-        @keyframes animate1 {
-          0% {
-            color: #DB2777;
-            text-shadow: none;
-          }
-    
-          100% {
-            color: #141213;
-            text-shadow: 0 0 10px #DB2777, 0 0 20px #DB2777, 0 0 40px #DB2777, 0 0 80px #DB2777, 0 0 160px #DB2777;
-          }
-        }
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    @layer components {
-      .animated-h2 {
-        animation: animate 1s linear forwards;
-      }
-      .animated {
-        animation: none;
-      }
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-      .bg-img {
-        background-image: radial-gradient(164.75% 100% at 50% 0, #3f2932 0, #191017 48.73%);
-      }
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-      .bg-img-light {
-        background-image: radial-gradient(164.75% 100% at 50% 0, #d589bc 0, #efeded 48.73%);
-      }
-      .backface-one {
-        transform: rotateX(180deg);
-        margin-top: -3rem;
-      }
-    }
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-        @keyframes colorChange {
-          0% {
-            background-color: #f3e8f3;
-            /* Initial color */
-          }
-    
-          100% {
-            background-color: #e8b8e8;
-            /* Final color */
-          }
-        }
-    
-        .hover\:animate-colorChange:hover {
-          animation: colorChange 0.5s ease-in-out;
-        }
-      
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  /* @apply border-border; */
+}
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  scroll-behavior: smooth;
+}
+@keyframes animate {
+  0% {
+    color: #db2777;
+    text-shadow: none;
+  }
+
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #db2777, 0 0 20px #db2777, 0 0 40px #db2777,
+      0 0 80px #db2777, 0 0 160px #db2777;
+  }
+}
+@keyframes animate1 {
+  0% {
+    color: #db2777;
+    text-shadow: none;
+  }
+
+  100% {
+    color: #141213;
+    text-shadow: 0 0 10px #db2777, 0 0 20px #db2777, 0 0 40px #db2777,
+      0 0 80px #db2777, 0 0 160px #db2777;
+  }
+}
+
+@layer components {
+  .animated-h2 {
+    animation: animate 1s linear forwards;
+  }
+  .animated {
+    animation: none;
+  }
+
+  .bg-img {
+    background-image: radial-gradient(
+      164.75% 100% at 50% 0,
+      #f87fb178 0,
+      #020617 48.73%
+    );
+  }
+
+  .bg-img-light {
+    background-image: radial-gradient(
+      164.75% 100% at 50% 0,
+      #d589bc 0,
+      #f9fafb 48.73%
+    );
+  }
+  .backface-one {
+    transform: rotateX(180deg);
+    margin-top: -3rem;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #f3e8f3;
+    /* Initial color */
+  }
+
+  100% {
+    background-color: #e8b8e8;
+    /* Final color */
+  }
+}
+
+.hover\:animate-colorChange:hover {
+  animation: colorChange 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.expbtn{
+  background-color: rgb(243, 24, 170);
+}
+.cdcs{
+  background-color: #fce4f2;
+}
