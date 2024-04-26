@@ -5,16 +5,15 @@ import { HoverBorderGradient } from "../ui/hover-border-gradient";
 import Image from "next/image";
 import "@/app/globals.css";
 import { Button } from "../ui/button";
-import Loader from "../Loader"
+import Loader from "../Loader";
 
 const Hero = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500); 
+    }, 1500);
   }, []);
   return (
     <>
@@ -32,7 +31,7 @@ const Hero = () => {
           </HoverBorderGradient>
         </div>
 
-        <div className="text-zinc-600 dark:text-slate-200 mt-20 text-4xl md:text-8xl z-50 flex flex-col md:flex-row items-center justify-center md:gap-4 tracking-wider font-bold">
+        <div className="text-zinc-600 dark:text-slate-200 mt-20 text-4xl md:text-8xl z-50 gap-4 flex items-center justify-center md:gap-4 tracking-wider font-bold">
           <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200">
             HULT
           </span>
@@ -57,7 +56,7 @@ const Hero = () => {
           <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-1/4" />
         </div>
 
-        <div className="text-zinc-600 dark:text-slate-200 text-4xl md:text-8xl z-50 flex flex-col md:flex-row items-center justify-center md:gap-4 tracking-wider font-bold backface-one opacity-50 blur-sm">
+        <div className="text-zinc-600 dark:text-slate-200 text-4xl md:text-8xl z-50 gap-4 flex items-center justify-center md:gap-4 tracking-wider font-bold backface-one opacity-50 blur-sm">
           <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200">
             HULT
           </span>

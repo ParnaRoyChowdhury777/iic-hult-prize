@@ -61,12 +61,13 @@ export default function showcard({
   return (
     <div>
       <Card
-        className="m-10 border-2 hover:shadow-lg shadow-lg shadow-pink-400/50 transform transition duration-500 ease-in-out hover:scale-105 hover:animate-colorChange cursor-pointer bg-[#fce4f2] dark:bg-gray-300 "
+        className="m-10 border-2 hover:shadow-lg shadow-lg shadow-pink-400/50 transform transition duration-500 ease-in-out hover:scale-105 hover:animate-colorChange cursor-pointer"
         sx={{
           width: 320,
           transition: "0.3s",
           boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)",
           "&:hover": { boxShadow: "0 8px 16px 0 rgba(0,0,0,0.6)" },
+          backgroundColor: "#fce4f2",
         }}
       >
         <div>

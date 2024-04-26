@@ -75,8 +75,8 @@ const Winner_show = () => {
       {isMounted && theme === "dark" && (
         <Spotlight fill="#DB2777" className="top-0" />
       )}
-      <section className="dark:bg-slate-950 mx-auto px-auto flex-wrap md:flex-nowrap">
-        <div className="flex items-center justify-center text-5xl text-pink-600 font-bold mb-10 mt-20">
+      <section className="dark:bg-slate-950 mx-auto px-2 sm:px-auto flex-wrap md:flex-nowrap">
+        <div className="flex items-center justify-center text-center text-5xl text-pink-600 font-bold mb-10 mt-20">
           Winner Showcase
         </div>
         <Card
@@ -112,7 +112,6 @@ const Winner_show = () => {
             </div>
           </CardContent>
           <CardFooter className="flex justify-between items-center p-6">
-           
             <div className="flex flex-row items-center justify-start mb-2 w-full gap-1 ">
               <AnimatedTooltip
                 items={people.map((item) => ({
@@ -219,7 +218,7 @@ const Winner_show = () => {
             ipsa ipsam deleniti officiis eveniet laboriosam dicta exercitationem
             magni officia sed veniam libero suscipit at voluptatum aspernatur.
           </p>
-          <Confetti width={1920} height={650} />
+          <Confetti height={400} style={{ width: "100vw", height: "500px" }} />
         </section>
       </section>
     </>
