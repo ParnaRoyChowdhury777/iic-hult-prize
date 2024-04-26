@@ -37,7 +37,7 @@ const Footer = () => {
                 className="cursor-pointer"
               />
             )}
-            <span className="self-center text-4xl font-bold whitespace-nowrap text-slate-950 dark:text-white">
+            <span className="self-center text-4xl font-bold whitespace-nowrap text-[rgb(13,30,89)] dark:text-white">
               TMSL
             </span>
           </div>
