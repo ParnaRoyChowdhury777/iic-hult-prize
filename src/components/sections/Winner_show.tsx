@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import {
   Card,
@@ -11,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import Header from "../header";
 import Confetti from "react-confetti";
+
 const Winner_show = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
