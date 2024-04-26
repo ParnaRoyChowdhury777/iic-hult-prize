@@ -24,32 +24,32 @@ import { StaticImageData } from "next/image";
 const people = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
+    name: "Person 1",
+    designation: "Student",
     image: { avatar1 },
   },
   {
     id: 2,
-    name: "Robert Johnson",
-    designation: "Product Manager",
+    name: "Person 2",
+    designation: "Student",
     image: { avatar1 },
   },
   {
     id: 3,
-    name: "Jane Smith",
-    designation: "Data Scientist",
+    name: "Person 3",
+    designation: "Student",
     image: { avatar1 },
   },
   {
     id: 4,
-    name: "Emily Davis",
-    designation: "UX Designer",
+    name: "Person 4",
+    designation: "Student",
     image: { avatar1 },
   },
   {
     id: 5,
-    name: "Tyler Durden",
-    designation: "Soap Developer",
+    name: "Person 5",
+    designation: "Student",
     image: { avatar1 },
   },
 ];
