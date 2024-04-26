@@ -132,7 +132,7 @@ const Winner_show = () => {
         </Card>
         <section
           id="imageSection"
-          className="flex flex-col flex-wrap md:flex-nowrap items-center justify-center mt-8 px-24 "
+          className="flex flex-col flex-wrap md:flex-nowrap items-center justify-center mt-8 sm:px-24 "
         >
           <p className="text-semibold text-center mx-auto mb-8 px-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
@@ -143,11 +143,12 @@ const Winner_show = () => {
             ipsa ipsam deleniti officiis eveniet laboriosam dicta exercitationem
             magni officia sed veniam libero suscipit at voluptatum aspernatur.
           </p>
-          <div className="grid grid-cols-5 gap-4 p-8 mx-auto">
+          <div className=" p-8 mx-auto flex flex-col flex-wrap gap-8">
+            <div className="flex flex-wrap gap-8">
             <img
               src="/images/winner-1.JPG"
               alt="Image 1"
-              className="col-span-3 h-50 w-50 rounded-lg border-2 border-pink-500"
+              className="col-span-3 h-72 w-96 rounded-lg border-2 border-pink-500"
             />
             <p className="col-span-2 text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
@@ -168,6 +169,8 @@ const Winner_show = () => {
               inventore dignissimos ipsa cum, omnis maiores fugit excepturi quia
               delectus ratione? Quisquam, nemo!
             </p>
+            </div>
+            <div className="flex flex-wrap gap-8">
             <p className="col-span-1 text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
               saepe exercitationem, quam quod asperiores praesentium rerum
@@ -180,17 +183,19 @@ const Winner_show = () => {
             <img
               src="/images/winner-2.JPG"
               alt="Image 2"
-              className="col-span-2 h-50 w-50 rounded-lg border-2 border-pink-500"
+              className="col-span-2 h-72 w-96  rounded-lg border-2 border-pink-500"
             />
             <img
               src="/images/winner-3.JPG"
               alt="Image 3"
-              className="col-span-2 h-50 w-50 rounded-lg border-2 border-pink-500"
+              className="col-span-2 h-72 w-96  rounded-lg border-2 border-pink-500"
             />
+            </div>
+            <div className="flex flex-wrap gap-8">
             <img
               src="/images/winner-4.JPG"
               alt="Image 4"
-              className="col-span-3 h-50 w-50 rounded-lg border-2 border-pink-500"
+              className="col-span-3 h-72 w-96 rounded-lg border-2 border-pink-500"
             />
             <p className="col-span-2 text-justify">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
@@ -208,6 +213,7 @@ const Winner_show = () => {
               cumque similique ipsa. Nostrum earum aliquam aperiam recusandae
               vel!
             </p>
+            </div>
           </div>
           <p className="text-semibold text-center mb-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
