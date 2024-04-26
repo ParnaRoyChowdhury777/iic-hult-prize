@@ -4,23 +4,17 @@ import {
   Card,
   CardHeader,
   CardTitle,
-  CardDescription,
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
 import Header from "../header";
-import Confetti from "react-confetti";
 import { useTheme } from "next-themes";
 import { Spotlight } from "../ui/Spotlight";
 import Image from "next/image";
 import logo1 from "../../../public/images/logo-1.png";
 import avatar1 from "../../../public/images/avatar-1.png";
-import winner1 from "../../../public/images/winner-1.jpg";
-import winner2 from "../../../public/images/winner-2.jpg";
-import winner3 from "../../../public/images/winner-3.jpg";
-import winner4 from "../../../public/images/winner-4.jpg";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
-import { StaticImageData } from "next/image";
+
 const people = [
   {
     id: 1,
@@ -141,16 +135,16 @@ const Winner_show = () => {
             ratione porro sint magnam nam! Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Tempora dolore velit, laborum, nihil
             ipsa ipsam deleniti officiis eveniet laboriosam dicta exercitationem
-            magni officia sed veniam libero suscipit at voluptatum aspernatur.
+            magni officia sed veniam libero suscipit at voluptatum aspernatur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo esse iusto qui similique illo molestiae illum doloremque dicta sed? Pariatur maxime nostrum atque ipsa cupiditate cumque aperiam totam iste illum commodi repellat dolor id quam provident sint voluptas corrupti, optio, officia unde cum consequuntur iure. 
           </p>
-          <div className=" p-8 mx-auto flex flex-col flex-wrap gap-8">
-            <div className="flex flex-wrap gap-8">
+          <div className=" px-4 py-8 mx-auto flex flex-col flex-wrap gap-8">
+            <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
             <img
               src="/images/winner-1.JPG"
               alt="Image 1"
               className="col-span-3 h-72 w-96 rounded-lg border-2 border-pink-500"
             />
-            <p className="col-span-2 text-justify">
+            <p className="text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
               saepe exercitationem, quam quod asperiores praesentium rerum
               molestiae, voluptatum nam hic voluptatibus. Omnis quo at laborum
@@ -160,26 +154,11 @@ const Winner_show = () => {
               Deleniti illum minus nostrum omnis maxime pariatur libero. Nam
               impedit et minus rem, ex similique quia error at aliquam vel
               exercitationem! Soluta rem ad sit! Recusandae voluptate quidem
-              facere? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quasi optio culpa magni esse ab itaque animi expedita
-              necessitatibus dolorem doloribus dicta amet assumenda facere
-              labore earum eius temporibus veniam, vero, explicabo molestiae!
-              Voluptatum repellendus, voluptates est eos facere laudantium
-              consequuntur quod quis optio quaerat asperiores sed accusantium
-              inventore dignissimos ipsa cum, omnis maiores fugit excepturi quia
-              delectus ratione? Quisquam, nemo!
+              facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est suscipit maxime recusandae magni quis ut nisi rerum cupiditate asperiores commodi dolores sunt, totam, architecto beatae veniam deserunt voluptatum exercitationem maiores hic expedita pariatur aliquid illum similique. Ipsam exercitationem commodi cumque, nisi perspiciatis dicta aliquam unde, quaerat eveniet minima molestias doloribus.
+              
             </p>
             </div>
-            <div className="flex flex-wrap gap-8">
-            <p className="col-span-1 text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-              saepe exercitationem, quam quod asperiores praesentium rerum
-              molestiae, voluptatum nam hic voluptatibus. Omnis quo at laborum
-              ratione porro sint magnam nam! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Ratione expedita, assumenda
-              accusamus nostrum totam, consectetur quaerat accusantium excepturi
-              cupiditate obcaecati est atque. lorem50
-            </p>
+            <div className="flex flex-wrap gap-8 justify-center items-center">
             <img
               src="/images/winner-2.JPG"
               alt="Image 2"
@@ -190,14 +169,24 @@ const Winner_show = () => {
               alt="Image 3"
               className="col-span-2 h-72 w-96  rounded-lg border-2 border-pink-500"
             />
+            <p className="text-left">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+              saepe exercitationem, quam quod asperiores praesentium rerum
+              molestiae, voluptatum nam hic voluptatibus. Omnis quo at laborum
+              ratione porro sint magnam nam! Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Ratione expedita, assumenda
+              accusamus nostrum totam, consectetur quaerat accusantium excepturi
+              cupiditate obcaecati est atque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia libero, culpa dolor, repellat aliquam quae dolores ipsa doloribus sit atque aliquid nisi quaerat accusantium placeat nihil aperiam nam odit quibusdam, voluptatem unde quod neque!
+            </p>
+            
             </div>
-            <div className="flex flex-wrap gap-8">
+            <div className="flex flex-col-reverse lg:flex-row-reverse justify-center items-center gap-8">
             <img
               src="/images/winner-4.JPG"
               alt="Image 4"
               className="col-span-3 h-72 w-96 rounded-lg border-2 border-pink-500"
             />
-            <p className="col-span-2 text-justify">
+            <p className="text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
               saepe exercitationem, quam quod asperiores praesentium rerum
               molestiae, voluptatum nam hic voluptatibus. Omnis quo at laborum
@@ -206,11 +195,7 @@ const Winner_show = () => {
               vel necessitatibus? Debitis repellendus veritatis consequatur a!
               Voluptatibus minima explicabo necessitatibus, ad obcaecati
               molestiae dolore esse beatae. Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Maxime vel nisi aspernatur in autem
-              earum facere quis dolorum ex commodi sit voluptate aut totam
-              laborum, modi accusamus eligendi repellendus placeat beatae? Fuga
-              recusandae, obcaecati laudantium in itaque omnis aut iste ad
-              cumque similique ipsa. Nostrum earum aliquam aperiam recusandae
+              consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum illum quam praesentium doloremque reiciendis quo facilis, accusamus expedita sequi commodi, tenetur dolor et nisi ad vel recusandae ut totam modi tempora? Molestiae perspiciatis doloribus explicabo, voluptas tempore numquam architecto, et, aut minima quam recusandae deleniti excepturi quia nobis quod expedita!
               vel!
             </p>
             </div>
@@ -224,7 +209,7 @@ const Winner_show = () => {
             ipsa ipsam deleniti officiis eveniet laboriosam dicta exercitationem
             magni officia sed veniam libero suscipit at voluptatum aspernatur.
           </p>
-          <Confetti height={400} style={{ width: "100vw", height: "500px" }} />
+          
         </section>
       </section>
     </>
