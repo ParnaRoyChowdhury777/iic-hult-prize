@@ -7,7 +7,6 @@ import Footer from '../footer';
 import Confetti from "react-confetti";
 const Winner_show = () => {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
-
     const scrollToSection = () => {
         
         const section = document.getElementById('imageSection');
