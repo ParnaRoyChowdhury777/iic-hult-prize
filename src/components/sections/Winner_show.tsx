@@ -12,6 +12,13 @@ import Header from "../header";
 import Confetti from "react-confetti";
 import { useTheme } from "next-themes";
 import { Spotlight } from "../ui/Spotlight";
+import Image from "next/image";
+import logo1 from "../../../public/images/logo-1.png";
+import avatar1 from "../../../public/images/avatar-1.png";
+import winner1 from "../../../public/images/winner-1.jpg";
+import winner2 from "../../../public/images/winner-2.jpg";
+import winner3 from "../../../public/images/winner-3.jpg";
+import winner4 from "../../../public/images/winner-4.jpg";
 
 const Winner_show = () => {
   
@@ -52,8 +59,8 @@ const Winner_show = () => {
           </CardHeader>
           <CardContent>
             <div className="flex items-center">
-              <img
-                src="/images/logo-1.png"
+              <Image
+                src={logo1}
                 alt="Card Image"
                 className="w-20 h-25"
                 height={150}
@@ -74,24 +81,24 @@ const Winner_show = () => {
           </CardContent>
           <CardFooter className="flex justify-between items-center p-6">
             <div className="flex -space-x-4 rtl:space-x-reverse">
-              <img
+              <Image
                 className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                src="/images/avatar-1.png"
+                src={avatar1}
                 alt=""
               />
-              <img
+              <Image
                 className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                src="/images/avatar-1.png"
+                src={avatar1}
                 alt=""
               />
-              <img
+              <Image
                 className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                src="/images/avatar-1.png"
+                src={avatar1}
                 alt=""
               />
-              <img
+              <Image
                 className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-                src="/images/avatar-1.png"
+                src={avatar1}
                 alt=""
               />
             </div>
@@ -120,8 +127,8 @@ const Winner_show = () => {
                 voluptatum aspernatur.
             </p>
             <div className="grid grid-cols-5 gap-4 p-8 mx-auto">
-                <img
-                src="/images/winner-1.JPG"
+                <Image
+                src={winner1}
                 alt="Image 1"
                 className="col-span-3 h-50 w-50 rounded-lg border-2 border-pink-500"
                 />
