@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/footer";
 import Floating_footer from "@/components/sections/floating_footer";
+import ScrollToTop from "@/components/ScrollToTop";
 const inter = Nunito_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <Floating_footer />
+          <ScrollToTop/>
         </ThemeProvider>
       </body>
     </html>
