@@ -24,7 +24,7 @@ const Winner_show = () => {
   return (
     <>
       <Header />
-      <section className="dark:bg-slate-950">
+      <section className="dark:bg-slate-950 mx-auto">
         <div className="flex items-center justify-center text-5xl text-pink-600 font-bold mb-10 mt-20">
           Winner Showcase
         </div>
