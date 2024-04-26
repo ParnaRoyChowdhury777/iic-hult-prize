@@ -41,7 +41,7 @@ const Footer = () => {
               TMSL
             </span>
           </div>
-          <ul className="flex flex-wrap gap-5 justify-center md:justify-end items-center text-sm font-medium text-gray-500 md:mb-0 dark:text-gray-400">
+          <ul className="flex flex-wrap gap-5 justify-center md:justify-end items-center text-sm font-medium text-gray-500 md:mb-0 dark:text-gray-400 hover:text-pink-600">
             <li className="mb-2 md:mb-0">
               <a
                 href="https://www.facebook.com"
