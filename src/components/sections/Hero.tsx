@@ -49,11 +49,11 @@ const Hero = () => {
           </span>
         </div>
 
-        <div className="w-[40rem] relative pb-10">
-          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-[2px] w-3/4 blur-sm" />
-          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-3/4" />
-          <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-[5px] w-1/4 blur-sm" />
-          <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-1/4" />
+        <div className="sm:w-[40rem] w-full relative pb-10">
+          <div className="absolute sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-[2px] sm:w-3/4 w-full blur-sm" />
+          <div className="absolute sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px sm:w-3/4 w-full" />
+          <div className="absolute sm:inset-x-60 inset-x-40 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-[5px] w-1/4 blur-sm" />
+          <div className="absolute sm:inset-x-60 inset-x-40 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-1/4" />
         </div>
 
         <div className="text-zinc-600 dark:text-slate-200 text-4xl md:text-8xl z-50 gap-4 flex items-center justify-center md:gap-4 tracking-wider font-bold backface-one opacity-50 blur-sm">
