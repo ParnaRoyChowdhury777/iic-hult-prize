@@ -24,7 +24,7 @@ const Footer = () => {
                 width={60}
                 height={60}
                 alt="logo"
-                className="ml-20 cursor-pointer"
+                className="cursor-pointer"
               />
             )}
             {isMounted && theme === "light" && (
@@ -33,7 +33,7 @@ const Footer = () => {
                 width={60}
                 height={60}
                 alt="logo"
-                className="ml-20 cursor-pointer"
+                className="cursor-pointer"
               />
             )}
             <span className="self-center text-4xl font-bold whitespace-nowrap navy dark:text-white">

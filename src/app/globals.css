@@ -126,6 +126,9 @@ body {
     transform: rotateX(180deg);
     margin-top: -3rem;
   }
+  .shadow-custom{
+    box-shadow: "16px 12px 14px 0 rgba(252, 0, 125, 0.8)";
+  }
   .cdcs {
     background-color: #fce4f2;
   }
