@@ -56,7 +56,7 @@ const Hero = () => {
           <div className="absolute sm:inset-x-60 inset-x-40 top-0 bg-gradient-to-r from-transparent via-pink-600 to-transparent h-px w-1/4" />
         </div>
 
-        <div className="text-zinc-600 dark:text-slate-200 text-4xl md:text-8xl z-50 gap-4 flex items-center justify-center md:gap-4 tracking-wider font-bold backface-one opacity-50 blur-sm">
+        <div className="text-zinc-600 dark:text-slate-200 text-4xl md:text-8xl z-48 gap-4 flex items-center justify-center md:gap-4 tracking-wider font-bold backface-one opacity-50 blur-sm">
           <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200">
             HULT
           </span>
