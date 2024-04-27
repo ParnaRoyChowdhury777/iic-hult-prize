@@ -57,7 +57,7 @@ const Hero = () => {
         </div>
 
         <div className="text-zinc-600 dark:text-slate-200 text-4xl md:text-8xl z-49 gap-4 flex items-center justify-center md:gap-4 tracking-wider font-bold backface-one opacity-50 blur-sm">
-          <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200">
+          <span className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200 z-49">
             HULT
           </span>
           <Image
@@ -65,9 +65,10 @@ const Hero = () => {
             width={100}
             height={100}
             alt="hult_logo"
+            className="z-49"
           />
           <span
-            className="py-2 tracking-wider animated dark:animated-h2 text-slate-800 dark:text-slate-200"
+            className="py-2 tracking-wider animated dark:animated-h2 z-49 text-slate-800 dark:text-slate-200"
             style={{ textShadow: "0 0 5px rgba(0, 0, 0, 0.3)" }}
           >
             PRIZE
